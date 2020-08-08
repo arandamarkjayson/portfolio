@@ -1,0 +1,35 @@
+.footer {
+    grid-column: 2 / span 12;
+
+    display: grid;
+
+    grid-template-columns: 1fr repeat(3, minmax(min-content, 54rem))1fr;
+    padding: 6.3rem 0;
+
+
+    &__link {
+        text-decoration: none;
+        font-family: $font-primary;
+        font-size: 2rem;
+        color: $color-secondary;
+
+    }
+
+    &__link:hover {
+        color: $color-primary;
+    }
+
+    &__contact {
+        padding-left: 3.4rem;
+        font-size: 2rem;
+        color: $color-secondary;
+    }
+}
+
+
+.copyright {
+    grid-column: 4/ 5;
+    justify-self: end;
+    align-self: center;
+    font-size: 2rem;
+}

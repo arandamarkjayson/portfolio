@@ -1,0 +1,24 @@
+.btn {
+
+    font-family: $font-primary;
+    font-size: 4.2rem;
+    font-weight: 600;
+    color: $color-primary;
+    width: 39.5rem;
+    height: 9rem;
+    background-color: transparent;
+    border: solid .1rem;
+
+
+    &:hover {
+        background-color: $color-primary;
+        color: $color-tertiary;
+
+    }
+
+
+}
+
+.heading-1 {
+    font-size: 11rem;
+}

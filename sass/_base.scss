@@ -1,0 +1,41 @@
+//Font Varialbles
+$font-primary: "bebas-neue-pro",
+sans-serif;
+
+//Color Variables
+$color-primary: #FFDD00;
+$color-secondary: #fff;
+$color-tertiary: #000;
+
+
+//Responsive Breakpoints
+
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; //10px /16px =62.5% -> 1rem = 10px
+}
+
+body {
+    font-family: $font-primary;
+    color: $color-primary;
+    font-weight: 300;
+    line-height: 1.6;
+    background-color: $color-tertiary;
+}
+
+.container {
+    display: grid;
+
+    grid-template-rows: min-content 1fr;
+    grid-template-columns: 1fr repeat(12, minmax(min-content, 13.5rem))1fr;
+
+}

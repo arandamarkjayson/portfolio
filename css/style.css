@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "bebas-neue-pro", sans-serif;
+  color: #FFDD00;
+  font-weight: 300;
+  line-height: 1.6;
+  background-color: #000; }
+
+.container {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  grid-template-columns: 1fr repeat(12, minmax(min-content, 13.5rem)) 1fr; }
+
+.header-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, minmax(min-content, 54rem)) 1fr;
+  align-items: center;
+  padding: 3.6rem 0; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.link {
+  text-decoration: none;
+  font-family: "bebas-neue-pro", sans-serif;
+  font-size: 2.6rem;
+  color: #fff; }
+
+.link:hover {
+  color: #FFDD00; }
+
+.nav__main {
+  grid-column: 2 / 3; }
+  .nav__main .link {
+    padding-right: 3.4rem; }
+
+.logo-container {
+  grid-column: 3 / 4;
+  justify-self: center; }
+  .logo-container .header-logo {
+    max-width: 22.5rem; }
+
+.nav__social {
+  grid-column: 4 / 5;
+  justify-self: end; }
+  .nav__social .link {
+    padding-left: 3.4rem; }
+
+.content-container {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-row-gap: 10rem;
+  grid-template-columns: max-content;
+  grid-template-rows: repeat(2, min-content) min-content;
+  background-image: url(../images/bg-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  padding: 20vh 0;
+  transition: all 2s;
+  -webkit-transition: all 2s;
+  -moz-transition: all 2s;
+  -ms-transition: all 2s;
+  -o-transition: all 2s; }
+
+.content {
+  justify-self: center;
+  align-self: center; }
+  .content .content__myName {
+    font-size: 11.4rem; }
+  .content .content__designation-outline {
+    color: transparent;
+    font-size: 16rem;
+    margin-top: -8rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff; }
+  .content .content__designation {
+    margin-top: -20rem;
+    font-size: 26.5rem; }
+
+.content__arrow-down {
+  height: 10.4rem;
+  justify-self: center; }
+
+.content__description {
+  grid-row: 3/4;
+  font-size: 3.2rem;
+  line-height: 5.3rem;
+  text-align: center;
+  max-width: 132rem;
+  color: #fff; }
+
+.btn__link {
+  justify-self: center; }
+
+.mywork {
+  grid-column: 2 / span 12;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr; }
+
+.footer {
+  grid-column: 2 / span 12;
+  display: grid;
+  grid-template-columns: 1fr repeat(3, minmax(min-content, 54rem)) 1fr;
+  padding: 6.3rem 0; }
+  .footer__link {
+    text-decoration: none;
+    font-family: "bebas-neue-pro", sans-serif;
+    font-size: 2rem;
+    color: #fff; }
+  .footer__link:hover {
+    color: #FFDD00; }
+  .footer__contact {
+    padding-left: 3.4rem;
+    font-size: 2rem;
+    color: #fff; }
+
+.copyright {
+  grid-column: 4/ 5;
+  justify-self: end;
+  align-self: center;
+  font-size: 2rem; }
+
+.btn {
+  font-family: "bebas-neue-pro", sans-serif;
+  font-size: 4.2rem;
+  font-weight: 600;
+  color: #FFDD00;
+  width: 39.5rem;
+  height: 9rem;
+  background-color: transparent;
+  border: solid .1rem; }
+  .btn:hover {
+    background-color: #FFDD00;
+    color: #000; }
+
+.heading-1 {
+  font-size: 11rem; }
