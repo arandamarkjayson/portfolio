@@ -6,6 +6,7 @@ sans-serif;
 $color-primary: #FFDD00;
 $color-secondary: #fff;
 $color-tertiary: #000;
+$color-tertiary-light:#090909;
 
 
 //Responsive Breakpoints
@@ -29,13 +30,18 @@ body {
     color: $color-primary;
     font-weight: 300;
     line-height: 1.6;
-    background-color: $color-tertiary;
+    background-color: $color-tertiary-light;
+    scroll-behavior: smooth;
 }
 
 .container {
     display: grid;
-
-    grid-template-rows: min-content 1fr;
-    grid-template-columns: 1fr repeat(12, minmax(min-content, 13.5rem))1fr;
-
+    //grid-row-gap: 15rem;
+    //grid-template-rows: min-content min-content min-content;
+    grid-template-columns: 1fr repeat(12, minmax(min-content, 13.7rem))1fr;
+    transition: all 2s;
+    -webkit-transition: all 2s;
+    -moz-transition: all 2s;
+    -ms-transition: all 2s;
+    -o-transition: all 2s;
 }
