@@ -14,14 +14,18 @@
     grid-template-columns: 1fr;
     justify-items: center;
     grid-column: 2 / 14;
-    grid-row-gap: 8vh;
-    padding: 15vh 0 15vh;
+    grid-row-gap: 8rem;
+    padding: 15rem 0 15rem;
 }
 
 .content {
+    animation-name: slideIn;
+    animation-duration: 3s;
+    position: relative;
 
     .content__myName {
         font-size: 11.4rem;
+
 
     }
 
@@ -42,14 +46,53 @@
 
 .content__arrow-down {
     height: 10.4rem;
+    animation-name: slideInArrow;
+    animation-duration: 3s;
+    position: relative;
 }
 
 .content__description {
-
+    animation-name: slideInDes;
+    animation-duration: 2s;
+    position: relative;
     font-size: 3.2rem;
     line-height: 5.3rem;
     text-align: center;
     max-width: 132rem;
     color: $color-secondary;
+}
 
+@keyframes slideIn {
+    from {
+        top: -780px;
+    }
+
+    to {
+        top: 0px;
+
+    }
+
+}
+
+@keyframes slideInArrow {
+    from {
+        top: -1200px;
+    }
+
+    to {
+        top: 0px;
+
+    }
+}
+
+
+@keyframes slideInDes {
+    from {
+        top: -1400px;
+    }
+
+    to {
+        top: 0px;
+
+    }
 }

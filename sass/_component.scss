@@ -19,6 +19,11 @@
 
 .border-right {
     border-right: solid 1px $color-primary;
+
+    @media only screen and (max-width: $bp-small) {
+        border-right: none;
+    }
+
 }
 
 ul {

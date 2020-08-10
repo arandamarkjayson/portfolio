@@ -1,8 +1,17 @@
 .resume {
-    padding: 15vh 0 5vh;
+    padding: 15rem 0 5rem;
     grid-column: 2 / 14;
     display: flex;
     justify-content: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+        flex-direction: column;
+        padding: 20rem 0 5rem;
+        justify-self: center;
+    }
+
+
+
 
     &__myName {
         padding-top: 6rem;
@@ -37,7 +46,13 @@
         max-width: 120rem;
         color: $color-secondary;
         justify-self: center;
-        margin-bottom: 10vh;
+        margin-bottom: 10rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+
+            padding: 0 10rem;
+        }
+
 
     }
 }
@@ -48,11 +63,19 @@
     grid-column: 2 / 14;
     max-width: 150rem;
     display: grid;
-    grid-template-columns: repeat(3, 40rem);
+    grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
     grid-column-gap: 5.2rem;
     grid-row-gap: 14rem;
     justify-self: center;
-    margin-bottom: 20vh;
+    margin-bottom: 20rem;
+
+
+    @media only screen and (max-width: $bp-smallest) {
+        display: flex;
+        flex-direction: column;
+        padding: 0 10rem;
+    }
+
 
 
     &__list {
@@ -70,6 +93,9 @@
     position: absolute;
     animation: 3s ease-out 0s 1 slideInFromLeft;
     -webkit-animation: 3s ease-out 0s 1 slideInFromLeft;
+
+
+
 }
 
 
@@ -79,6 +105,15 @@
     fill: $color-secondary;
     position: absolute;
     z-index: 1;
+
+    @media only screen and (max-width: $bp-smallest) {
+        display: grid;
+        flex-direction: row;
+
+
+    }
+
+
 
     &__yellow--1 {
         @extend %yellow-rec;
