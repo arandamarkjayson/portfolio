@@ -6,15 +6,15 @@
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-family: "bebas-neue-pro", sans-serif;
   color: #FFDD00;
   font-weight: 300;
   line-height: 1.6;
-  background-color: #090909;
-  scroll-behavior: smooth; }
+  background-color: #090909; }
 
 .container {
   display: grid;
@@ -23,10 +23,28 @@ body {
   -webkit-transition: all 2s;
   -moz-transition: all 2s;
   -ms-transition: all 2s;
-  -o-transition: all 2s; }
+  -o-transition: all 2s;
+  animation: transitionIn 0.75s; }
+
+@keyframes transitionIn {
+  from {
+    opacity: 0;
+    transform: rotateX(-10);
+    -webkit-transform: rotateX(-10);
+    -moz-transform: rotateX(-10);
+    -ms-transform: rotateX(-10);
+    -o-transform: rotateX(-10); }
+  to {
+    opacity: 1;
+    transform: rotateX(0);
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0); } }
 
 .header-container {
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99; }
 
 .header {
   display: flex;

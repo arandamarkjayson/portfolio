@@ -23,6 +23,7 @@ $color-tertiary-light:#090909;
 
 html {
     font-size: 62.5%; //10px /16px =62.5% -> 1rem = 10px
+    scroll-behavior: smooth;
 }
 
 body {
@@ -31,7 +32,7 @@ body {
     font-weight: 300;
     line-height: 1.6;
     background-color: $color-tertiary-light;
-    scroll-behavior: smooth;
+
 }
 
 .container {
@@ -44,4 +45,29 @@ body {
     -moz-transition: all 2s;
     -ms-transition: all 2s;
     -o-transition: all 2s;
+    animation: transitionIn 0.75s;
+}
+
+
+
+@keyframes transitionIn {
+
+    from {
+        opacity: 0;
+        transform: rotateX(-10);
+        -webkit-transform: rotateX(-10);
+        -moz-transform: rotateX(-10);
+        -ms-transform: rotateX(-10);
+        -o-transform: rotateX(-10);
+    }
+
+
+    to {
+        opacity: 1;
+        transform: rotateX(0);
+        -webkit-transform: rotateX(0);
+        -moz-transform: rotateX(0);
+        -ms-transform: rotateX(0);
+        -o-transform: rotateX(0);
+    }
 }
