@@ -4,6 +4,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr repeat(12, minmax(min-content, 13.7rem))1fr;
 }
 
 .content-container {
