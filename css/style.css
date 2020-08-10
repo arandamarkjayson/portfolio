@@ -85,7 +85,7 @@ body {
   grid-column: 1 / -1;
   display: grid;
   grid-row-gap: 10rem;
-  grid-template-rows: min-content;
+  grid-template-rows: repeat(auto-fit, minmax(164rem, 1fr));
   grid-template-columns: 1fr;
   background-image: url(../images/bg-1.png);
   background-position: center;
