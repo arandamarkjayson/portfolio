@@ -108,7 +108,7 @@ body {
   justify-items: center;
   grid-column: 2 / 14;
   grid-row-gap: 8rem;
-  padding: 15rem 0 15rem; }
+  padding: 25rem 0 15rem; }
 
 .content {
   animation-name: slideIn;
@@ -117,11 +117,13 @@ body {
   .content .content__myName {
     font-size: 11.4rem; }
   .content .content__designation-outline {
+    margin-top: -2.5rem;
     color: transparent;
     font-size: 16rem;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff; }
   .content .content__designation {
+    margin-top: -7rem;
     font-size: 26.5rem; }
 
 .content__arrow-down {
