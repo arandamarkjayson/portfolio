@@ -25,7 +25,6 @@ body {
   font-family: "bebas-neue-pro", sans-serif;
   color: #FFDD00;
   font-weight: 300;
-  line-height: 1.6;
   background-color: #090909; }
 
 .container {
@@ -120,11 +119,9 @@ body {
   .content .content__designation-outline {
     color: transparent;
     font-size: 16rem;
-    margin-top: -8rem;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff; }
   .content .content__designation {
-    margin-top: -20rem;
     font-size: 26.5rem; }
 
 .content__arrow-down {
@@ -138,7 +135,6 @@ body {
   animation-duration: 2s;
   position: relative;
   font-size: 3.2rem;
-  line-height: 5.3rem;
   text-align: center;
   max-width: 132rem;
   color: #fff; }
@@ -320,16 +316,13 @@ ul {
       padding: 20rem 0 5rem;
       justify-self: center; } }
   .resume__myName {
-    padding-top: 6rem;
     font-size: 9rem; }
   .resume__designation-outline {
     color: transparent;
     font-size: 12.4rem;
-    margin-top: -5rem;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #fff; }
   .resume__designation {
-    margin-top: -16rem;
     font-size: 20.5rem; }
   .resume__picture {
     max-width: 36rem;
@@ -339,7 +332,6 @@ ul {
   .resume__description {
     grid-column: 3 / 13;
     font-size: 3.2rem;
-    line-height: 5.3rem;
     text-align: center;
     max-width: 120rem;
     color: #fff;

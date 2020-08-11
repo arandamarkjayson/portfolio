@@ -32,13 +32,11 @@
     .content__designation-outline {
         color: transparent;
         font-size: 16rem;
-        margin-top: -8rem;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: $color-secondary;
     }
 
     .content__designation {
-        margin-top: -20rem;
         font-size: 26.5rem;
     }
 
@@ -56,7 +54,6 @@
     animation-duration: 2s;
     position: relative;
     font-size: 3.2rem;
-    line-height: 5.3rem;
     text-align: center;
     max-width: 132rem;
     color: $color-secondary;
