@@ -13,13 +13,13 @@ html {
       font-size: 55%; } }
   @media only screen and (max-width: 100em) {
     html {
-      font-size: 45%; } }
+      font-size: 50%; } }
   @media only screen and (max-width: 73em) {
     html {
-      font-size: 35%; } }
+      font-size: 45%; } }
   @media only screen and (max-width: 37.5em) {
     html {
-      font-size: 25%; } }
+      font-size: 40%; } }
 
 body {
   font-family: "bebas-neue-pro", sans-serif;
@@ -313,22 +313,33 @@ ul {
   @media only screen and (max-width: 37.5em) {
     .resume {
       flex-direction: column;
-      padding: 20rem 0 5rem;
+      padding: 20rem 0 rem;
       justify-self: center; } }
   .resume__myName {
     font-size: 9rem; }
+    @media only screen and (max-width: 37.5em) {
+      .resume__myName {
+        text-align: center;
+        font-size: 6rem; } }
   .resume__designation-outline {
-    color: transparent;
-    font-size: 12.4rem;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #fff; }
+    color: #fff;
+    font-size: 12.4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .resume__designation-outline {
+        text-align: center;
+        font-size: 6rem; } }
   .resume__designation {
     font-size: 20.5rem; }
   .resume__picture {
     max-width: 36rem;
     align-self: center;
-    justify-self: end;
     padding-right: 6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .resume__picture {
+        text-align: center;
+        justify-self: center;
+        padding: 5rem 0;
+        width: 60%; } }
   .resume__description {
     grid-column: 3 / 13;
     font-size: 3.2rem;
@@ -339,7 +350,8 @@ ul {
     margin-bottom: 10rem; }
     @media only screen and (max-width: 37.5em) {
       .resume__description {
-        padding: 0 10rem; } }
+        margin-bottom: 8rem;
+        padding: 0 5rem; } }
 
 .skills {
   grid-column: 2 / 14;
@@ -354,7 +366,7 @@ ul {
     .skills {
       display: flex;
       flex-direction: column;
-      padding: 0 10rem; } }
+      padding: 0 5rem; } }
   .skills__list {
     list-style: none;
     color: #fff;

@@ -16,14 +16,23 @@
     &__myName {
 
         font-size: 9rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            text-align: center;
+            font-size: 6rem;
+        }
+
     }
 
     &__designation-outline {
-        color: transparent;
+        color: $color-secondary;
         font-size: 12.4rem;
 
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: $color-secondary;
+        @media only screen and (max-width: $bp-smallest) {
+            text-align: center;
+            font-size: 6rem;
+        }
+
     }
 
     &__designation {
@@ -33,8 +42,15 @@
     &__picture {
         max-width: 36rem;
         align-self: center;
-        justify-self: end;
         padding-right: 6rem;
+
+        @media only screen and (max-width: $bp-smallest) {
+            text-align: center;
+            justify-self: center;
+            padding: 5rem 0;
+            width: 60%;
+
+        }
     }
 
     &__description {
@@ -48,8 +64,8 @@
         margin-bottom: 10rem;
 
         @media only screen and (max-width: $bp-smallest) {
-
-            padding: 0 10rem;
+            margin-bottom: 8rem;
+            padding: 0 5rem;
         }
 
 
@@ -72,7 +88,7 @@
     @media only screen and (max-width: $bp-smallest) {
         display: flex;
         flex-direction: column;
-        padding: 0 10rem;
+        padding: 0 5rem;
     }
 
 
