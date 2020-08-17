@@ -1,43 +1,21 @@
 .footer-container {
     background-color: $color-tertiary;
-    grid-column: 1 / -1;
-
+    grid-column: 1 /-1;
 }
-
 
 .footer {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 6.3rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 54.66rem));
+    padding: 4rem 0;
     max-width: 164rem;
     margin: 0 auto;
+    grid-auto-flow: column;
+    justify-items: center;
+    font-size: 1.4rem;
+    color: $color-secondary;
 
-
-
-
-
-    &__link {
-        text-decoration: none;
-        font-family: $font-primary;
-        font-size: 2rem;
-        color: $color-secondary;
-
+    @media only screen and (max-width: $bp-smallest) {
+        grid-auto-flow: row;
+        justify-self: start;
     }
-
-    &__link:hover {
-        color: $color-primary;
-    }
-
-    &__contact {
-        font-size: 2rem;
-        color: $color-secondary;
-    }
-}
-
-
-.copyright {
-    grid-column: 3/ 4;
-    justify-self: end;
-    align-self: center;
-    font-size: 2rem;
 }

@@ -1,9 +1,10 @@
 //Font Varialbles
-$font-primary: "bebas-neue-pro",
+$font-primary: 'Montserrat',
 sans-serif;
 
+
 //Color Variables
-$color-primary: #FFDD00;
+$color-primary: #00D646;
 $color-secondary: #fff;
 $color-tertiary: #000;
 $color-tertiary-light:#090909;
@@ -15,79 +16,59 @@ $bp-medium:100em;
 $bp-small:73em;
 $bp-smallest:37.5em;
 
-*,
-*::before,
-*::after {
+* {
     margin: 0;
-    padding: 0;
-    box-sizing: inherit;
 }
+
 
 html {
     font-size: 62.5%; //10px /16px =62.5% -> 1rem = 10px
     scroll-behavior: smooth;
-
-    @media only screen and (max-width: $bp-largest) {
-        font-size: 55%;
-    }
-
-    @media only screen and (max-width: $bp-medium) {
-        font-size: 50%;
-    }
-
-    @media only screen and (max-width: $bp-small) {
-        font-size: 45%;
-    }
-
-    @media only screen and (max-width: $bp-smallest) {
-        font-size: 40%;
-    }
-
-
-
 }
 
 body {
     font-family: $font-primary;
     color: $color-primary;
     font-weight: 300;
-    background-color: $color-tertiary-light;
-
+    background-color: $color-tertiary;
 }
 
 .container {
     display: grid;
-    //grid-row-gap: 15rem;
-    //grid-template-rows: min-content min-content min-content;
-    grid-template-columns: 1fr repeat(12, minmax(min-content, 13.7rem))1fr;
-    transition: all 2s;
-    -webkit-transition: all 2s;
-    -moz-transition: all 2s;
-    -ms-transition: all 2s;
-    -o-transition: all 2s;
-    animation: transitionIn 0.75s;
+    grid-template-columns: 1fr repeat(12, minmax(min-content, 13.66rem)) 1fr;
+    //  grid-template-rows: min-content min-content;
+    grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr));
 }
 
+.content {
+    display: grid;
+    grid-template-rows: min-content min-content min-content;
+    max-width: 164rem;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 25vh 0;
+}
 
+.content-bg {
+    grid-column: 1 / -1;
+    background-image: url(/images/landing-cover-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-template-columns: 1fr repeat(12, minmax(min-content, 13.66rem)) 1fr;
 
-@keyframes transitionIn {
+    &--resume {
+        grid-column: 1 / -1;
+        background-image: url(/images/landing-cover-1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
 
-    from {
-        opacity: 0;
-        transform: rotateX(-10);
-        -webkit-transform: rotateX(-10);
-        -moz-transform: rotateX(-10);
-        -ms-transform: rotateX(-10);
-        -o-transform: rotateX(-10);
     }
 
-
-    to {
-        opacity: 1;
-        transform: rotateX(0);
-        -webkit-transform: rotateX(0);
-        -moz-transform: rotateX(0);
-        -ms-transform: rotateX(0);
-        -o-transform: rotateX(0);
+    &--techskill {
+        grid-column: 1 / -1;
+        background-color: $color-tertiary-light;
     }
 }
