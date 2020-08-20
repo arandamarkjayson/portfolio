@@ -325,8 +325,7 @@ a:hover {
   color: #00d646; }
 
 .techskill {
-  font-size: 1.6rem;
-  padding-left: 2rem; }
+  font-size: 1.6rem; }
   .techskill__container {
     background-color: #090909; }
   .techskill__list {
@@ -334,18 +333,18 @@ a:hover {
     text-align: right;
     width: 17.8rem;
     display: inline-block; }
+    @media only screen and (max-width: 37.5em) {
+      .techskill__list {
+        display: block;
+        text-align: left;
+        margin-bottom: 2rem; } }
   .techskill--grid {
     display: grid;
     margin: 0 auto;
     max-width: 164rem;
     padding: 15vh 0;
+    justify-content: center;
     grid-row-gap: 4rem; }
-    @media only screen and (max-width: 37.5em) {
-      .techskill--grid {
-        justify-self: center;
-        display: flex;
-        flex-direction: column;
-        row-gap: 3rem; } }
 
 .career__container {
   background-color: #000; }
@@ -488,6 +487,10 @@ a:hover {
   fill: #fff;
   position: absolute;
   z-index: 1; }
+  @media only screen and (max-width: 37.5em) {
+    .rectangle {
+      width: 100%;
+      max-width: 50rem; } }
   .rectangle__yellow--1 {
     width: 25rem; }
   .rectangle__yellow--2 {

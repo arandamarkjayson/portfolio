@@ -109,7 +109,7 @@
 
 .techskill {
     font-size: 1.6rem;
-    padding-left: 2rem;
+
 
     &__container {
         background-color: $color-tertiary-light;
@@ -120,6 +120,12 @@
         text-align: right;
         width: 17.8rem;
         display: inline-block;
+
+        @media only screen and (max-width: $bp-smallest) {
+            display: block;
+            text-align: left;
+            margin-bottom: 2rem;
+        }
     }
 
     &--grid {
@@ -127,16 +133,8 @@
         margin: 0 auto;
         max-width: 164rem;
         padding: 15vh 0;
-        //justify-content: center;
+        justify-content: center;
         grid-row-gap: 4rem;
-
-        @media only screen and (max-width: $bp-smallest) {
-            justify-self: center;
-            display: flex;
-            flex-direction: column;
-            row-gap: 3rem;
-
-        }
     }
 }
 
@@ -352,6 +350,11 @@
     fill: $color-secondary;
     position: absolute;
     z-index: 1;
+
+    @media only screen and (max-width: $bp-smallest) {
+        width: 100%;
+        max-width: 50rem;
+    }
 
 
 
