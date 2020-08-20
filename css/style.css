@@ -18,7 +18,8 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #fff;
   font-weight: 300;
-  background-color: #000; }
+  background-color: #000;
+  overflow-x: hidden; }
 
 .wrapper {
   display: grid;
@@ -228,7 +229,7 @@ a:hover {
       display: flex;
       flex-direction: column;
       justify-items: center;
-      grid-row-gap: 2rem; } }
+      row-gap: 2rem; } }
 
 .button {
   width: 34.2rem;
@@ -308,7 +309,7 @@ a:hover {
     .keyskill--section {
       display: flex;
       flex-direction: column;
-      padding: 0 15rem; } }
+      padding: 0 10rem; } }
 
 .keyskill--right {
   text-align: right; }
