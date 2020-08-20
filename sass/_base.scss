@@ -1,6 +1,5 @@
 //Font Varialbles
-$font-primary: "Montserrat",
-sans-serif;
+$font-primary: "Montserrat", sans-serif;
 
 //Color Variables
 $color-primary: #00d646;
@@ -15,39 +14,36 @@ $bp-small: 56em;
 $bp-smallest: 37.5em;
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
 html {
-    font-size: 62.5%; //10px /16px =62.5% -> 1rem = 10px
-    scroll-behavior: smooth;
+  font-size: 62.5%; //10px /16px =62.5% -> 1rem = 10px
+  scroll-behavior: smooth;
 
-    @media only screen and (max-width: $bp-medium) {
-        font-size: 60.5%;
-    }
+  @media only screen and (max-width: $bp-medium) {
+    font-size: 60.5%;
+  }
 
-    @media only screen and (max-width: $bp-small) {
-        font-size: 50.5%;
-    }
+  @media only screen and (max-width: $bp-small) {
+    font-size: 50.5%;
+  }
 
-
-    @media only screen and (max-width: $bp-smallest) {
-        font-size: 40.5%;
-    }
-
-
+  @media only screen and (max-width: $bp-smallest) {
+    font-size: 40.5%;
+  }
 }
 
 body {
-    font-family: $font-primary;
-    color: $color-secondary;
-    font-weight: 300;
-    background-color: $color-tertiary;
+  font-family: $font-primary;
+  color: $color-secondary;
+  font-weight: 300;
+  background-color: $color-tertiary;
+  overflow-x: hidden;
 }
 
-
 .wrapper {
-    display: grid;
-    grid-template-rows: min-content 10rem;
-    //grid-template-rows: 10rem 200vh 10rem;
+  display: grid;
+  grid-template-rows: min-content 10rem;
+  //grid-template-rows: 10rem 200vh 10rem;
 }
