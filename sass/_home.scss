@@ -1,18 +1,23 @@
-.btn__section {
-    margin-top: 10vh;
-    display: flex;
-    justify-content: center;
-    grid-column-gap: 3rem;
-
-
-
-    @media only screen and (max-width: $bp-smallest) {
-        flex-direction: column;
-        margin-left: 1.5rem;
-        grid-row-gap: 3rem;
-    }
+.home-container {
+    background-image: url(/images/landing-cover-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
-.btn-align-right {
-    justify-self: right;
+
+.intro {
+    display: grid;
+    //grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr));
+    margin: 0 auto;
+    max-width: 164rem;
+    padding: 28vh 0 23vh;
+    justify-items: center;
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 20vh 0 20vh;
+    }
+
+
+
 }

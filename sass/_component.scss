@@ -1,92 +1,113 @@
-.btn {
-    font-family: $font-primary;
-    font-size: 2rem;
-    font-weight: 700;
-    color: $color-secondary;
-    width: 33rem;
-    height: 7.4rem;
-    background-color: $color-primary;
-    text-transform: uppercase;
-    border: none;
-
-    &:hover {
-        background-color: $color-secondary;
-        color: $color-primary;
-    }
-}
-
-
-////heading
-
-.heading-1 {
+.heading__1 {
     text-transform: uppercase;
     font-size: 8.4rem;
     font-weight: 800;
+    color: $color-primary;
 
-    .last--name {
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 4.8rem;
+    }
+
+    &--lastname {
         font-size: 14.2rem;
         font-weight: 800;
-    }
-}
 
-.heading-2 {
-    font-size: 4.6rem;
-
-
-    &__skill--title {
-        grid-column: 1/-1;
-        font-weight: 800;
-        font-size: 4.6rem;
-        text-transform: uppercase;
-        justify-self: center;
-
-        &-white {
-            color: $color-secondary;
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 8rem;
         }
     }
 
 
-
 }
 
-.heading-3 {
-    font-size: 3.2rem;
-    color: $color-secondary;
-    font-weight: 700;
+.heading__2 {
+    font-size: 6.4rem;
+}
 
+.heading__3 {
+    font-size: 4.6rem;
+
+    &--skill {
+        font-size: 4.6rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        justify-self: center;
+        margin-bottom: 8.6rem;
+    }
 
 }
 
 .heading__4 {
-    font-size: 3.2rem;
-    color: $color-secondary;
+    font-size: 3rem;
+    color: #fff;
     font-weight: 700;
 
+    &--company {
+        color: $color-primary;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 2rem;
+    }
 }
 
 .heading__5 {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
+    color: #fff;
+
+
+    &--designation {
+        padding-top: 4rem;
+        font-weight: 700;
+        font-size: 1.6rem;
+    }
+
+    &--course {
+        font-weight: 700;
+        font-size: 1.6rem;
+
+    }
+
+}
+
+
+//margins
+
+.margin-bottom {
+    margin-bottom: 3.9rem;
+}
+
+.margin-top {
+    margin-top: 3.9rem;
+}
+
+.btn-container {
+    display: flex;
+    margin-top: 11.4rem;
+    grid-column-gap: 3rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        grid-row-gap: 2rem;
+    }
+}
+
+.button {
+    width: 34.2rem;
+    height: 7.4rem;
+    font-size: 2.0rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: $font-primary;
+    background-color: $color-primary;
     color: $color-secondary;
+    border: none;
 }
 
+.button:hover {
 
-
-////margins
-.margin {
-
-    &__bottom {
-        margin-bottom: 3.9rem;
-    }
-
-    &__top {
-        margin-top: 3.9rem;
-    }
+    background-color: $color-secondary;
+    color: $color-tertiary;
 }
-
-
-.margin-titles {
-    margin: 8.8rem 0 8.8rem;
-}
-
-
-////margins

@@ -4,181 +4,93 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio | Mark Jayson Portfolio</title>
+    <title>Home | Mark Jayson Portfolio</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="https://use.typekit.net/cfe0jvm.css" />
-    <link rel="stylesheet" href="/css/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="/css/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css" />
 </head>
 
 <body>
-    <div class="header-container sticky">
-        <header class="header">
-            <nav class="nav__main">
-                <a class="link" href="index.html">Home</a>
-                <a class="link" href="resume.html">Resume</a>
-                <a class="link selected" href="portfolio.html">Portfolio</a>
-            </nav>
-            <div class="logo-container">
-                <img src="images/logo.png" alt="" class="header-logo" />
-            </div>
-            <nav class="nav__social">
-                <a class="link" href="https://www.behance.net/mjayarandagraphics" target="_blank">Behance</a>
-                <a class="link" href="https://www.linkedin.com/in/markjaysona/" target="_blank">Linkedin</a>
-                <!-- <a class="link" href="https://www.facebook.com/mjayaranda" target="_blank">Facebook</a>-->
-            </nav>
-        </header>
-    </div>
+    <div class="wrapper">
+        <div class="header-container sticky">
+            <header class="header">
+                <nav class="nav__main">
+                    <a href="index.html" class="link__main ">Home</a>
+                    <a href="resume.html" class="link__main">Resume</a>
+                    <a href="portfolio.html" class="link__main selected">Portfolio</a>
+                </nav>
+                <img src="/images/logo.png" alt="" class="logo__header">
+                <nav class="nav__social">
+                    <a href="https://www.behance.net/mjayarandagraphics" class="link__social"
+                        target="_blank">Behance</a>
+                    <a href="https://www.linkedin.com/in/markjaysona/" class="link__social" target="_blank">Linkedin</a>
 
-    <div class="container">
-
-        <!-- <section class="sidebar">
-            <ul class="portfolio__t-skil">
-                <h3 class="heading__3"> Key Skills</h3>
-                <li><a class="link" href="">Brochure Design</a></li>
-                <li><a class="link" href="">Packaging Design</a></li>
-                <li><a class="link" href="">Logo Design</a></li>
-                <li><a class="link" href="">Branding</a></li>
-                <li><a class="link" href="">Poster Design</a></li>
-                <li><a class="link" href="">Photography</a></li>
-                <li><a class="link" href="">E-Newsletter Design</a>
-                <li><a class="link" href="">Web & Banner Design</a></li>
-                <li><a class="link" href="">Homepage & Landing Page Design</a></li>
-                <li><a class="link" href="">Interactive Prototyping</a></li>
-                <li><a class="link" href="">Wireframing</a></li>
-        <li><a class="link" href="">Front end Web Development</a></li>
-        </ul>
-        </section>-->
-        <section class="portfolios">
-            <a href="resume.html" target="_blank">
-                <div class="portfolio">
-                    <img class="image" src="images/default-image.jpg" alt="">
-                    <div class="overlay">
-                        <div class="text">Photography</div>
-                    </div>
-                </div>
-            </a>
-
-
-            <div id="popup1" class="overlay">
-                <div class="popup">
-                    <h2>Here i am</h2>
-                    <a class="close" href="#">&times;</a>
-                    <div class="content">
-                        <iframe width="1400" height="1022"
-                            src="https://xd.adobe.com/embed/b1c14768-5476-46b3-a1c7-c6d1c091725f-e492/" frameborder="0"
-                            allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
+            </header>
+        </div>
 
 
 
-            <a href="resume.html">
-                <div class="portfolio">
-                    <img class="image" src="./images/default-image.jpg" alt="">
-                    <div class="overlay">
-                        <div class="text">Photography</div>
-                    </div>
-                </div>
-            </a>
-            <a href="resume.html">
-                <div class="portfolio">
-                    <img class="image" src="./images/default-image.jpg" alt="">
-                    <div class="overlay">
-                        <div class="text">Photography</div>
-                    </div>
-                </div>
-            </a>
+        <div class="portfolio-container">
 
-            <a href="resume.html">
-                <div class="portfolio">
-                    <img class="image" src="/images/default-image.jpg" alt="">
-                    <div class="overlay">
-                        <div class="text">Photography</div>
-                    </div>
-                </div>
-            </a>
-            <a href="resume.html">
-                <div class="portfolio">
-                    <img class="image" src="/images/default-image.jpg" alt="">
-                    <div class="overlay">
-                        <div class="text">Photography</div>
-                    </div>
-                </div>
-            </a>
-            <a href="resume.html">
-                <div class="portfolio">
-                    <img class="image" src="/images/default-image.jpg" alt="">
-                    <div class="overlay">
-                        <div class="text">Photography</div>
-                    </div>
-                </div>
-            </a>
+            <section class="portfolios">
+
+                <h3 class="heading__3--skill">
+                    <span class="span--green"> Portfolio</span>
+                </h3>
+
+                <section class="portfolios__section">
+                    <a href="portfolio.html">
+                        <div class="portfolio">
+                            <img class="image" src="./images/default-image.jpg" alt="">
+                            <div class="overlay">
+                                <div class="text">noon.com</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="portfolio.html">
+                        <div class="portfolio">
+                            <img class="image" src="./images/default-image.jpg" alt="">
+                            <div class="overlay">
+                                <div class="text">SIVVI</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="portfolio.html">
+                        <div class="portfolio">
+                            <img class="image" src="./images/default-image.jpg" alt="">
+                            <div class="overlay">
+                                <div class="text">GWD FZE</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="portfolio.html">
+                        <div class="portfolio">
+                            <img class="image" src="./images/default-image.jpg" alt="">
+                            <div class="overlay">
+                                <div class="text">Personal Project</div>
+                            </div>
+                        </div>
+                    </a>
+
+                </section>
 
 
-            <a href="resume.html">
-                <div class="portfolio">
-                    <img class="image" src="/images/default-image.jpg" alt="">
-                    <div class="overlay">
-                        <div class="text">Photography</div>
-                    </div>
-                </div>
-            </a>
-            <a href="resume.html">
-                <div class="portfolio">
-                    <img class="image" src="/images/default-image.jpg" alt="">
-                    <div class="overlay">
-                        <div class="text">Photography</div>
-                    </div>
-                </div>
-            </a>
-            <a href="resume.html">
-                <div class="portfolio">
-                    <img class="image" src="/images/default-image.jpg" alt="">
-                    <div class="overlay">
-                        <div class="text">Photography</div>
-                    </div>
-                </div>
-            </a>
-        </section>
+            </section>
+        </div>
 
 
 
         <div class="footer-container">
             <footer class="footer">
-                <a class="footer__link" href="mailto:arandamarkjayson@gmail.com">arandamarkjayson@gmail.com</a>
-                <span class="footer__contact">+971 55 6078853</span>
-
-                <p class="copyright">© 2020 Mark Jayson Aranda</p>
+                <a class="footer__mail" href="mailto:arandamarkjayson@gmail.com">arandamarkjayson@gmail.com</a>
+                <p class="footer__number">+971 556078853</p>
+                <p class="footer__copyright">© 2020 Mark Jayson Aranda</p>
             </footer>
         </div>
     </div>
-
-    </div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-arrow-circle-up fa-3x"></i></button>
-    <script>
-        //Get the button
-        var mybutton = document.getElementById("myBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-    </script>
 </body>
 
 </html>

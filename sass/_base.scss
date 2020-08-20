@@ -1,74 +1,53 @@
 //Font Varialbles
-$font-primary: 'Montserrat',
+$font-primary: "Montserrat",
 sans-serif;
 
-
 //Color Variables
-$color-primary: #00D646;
+$color-primary: #00d646;
 $color-secondary: #fff;
 $color-tertiary: #000;
-$color-tertiary-light:#090909;
-
+$color-tertiary-light: #090909;
 
 //Responsive Breakpoints
-$bp-largest:139em;
-$bp-medium:100em;
-$bp-small:73em;
-$bp-smallest:37.5em;
+$bp-largest: 139em;
+$bp-medium: 67.5em;
+$bp-small: 56em;
+$bp-smallest: 37.5em;
 
 * {
     margin: 0;
 }
 
-
 html {
     font-size: 62.5%; //10px /16px =62.5% -> 1rem = 10px
     scroll-behavior: smooth;
+
+    @media only screen and (max-width: $bp-medium) {
+        font-size: 60.5%;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 50.5%;
+    }
+
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 40.5%;
+    }
+
+
 }
 
 body {
     font-family: $font-primary;
-    color: $color-primary;
+    color: $color-secondary;
     font-weight: 300;
     background-color: $color-tertiary;
 }
 
-.container {
+
+.wrapper {
     display: grid;
-    grid-template-columns: 1fr repeat(12, minmax(min-content, 13.66rem)) 1fr;
-    //  grid-template-rows: min-content min-content;
-    grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr));
-}
-
-.content {
-    display: grid;
-    grid-template-rows: min-content min-content min-content;
-    max-width: 164rem;
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    padding: 25vh 0;
-}
-
-.content-bg {
-    grid-column: 1 / -1;
-    background-image: url(/images/landing-cover-1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    grid-template-columns: 1fr repeat(12, minmax(min-content, 13.66rem)) 1fr;
-
-    &--resume {
-        grid-column: 1 / -1;
-        background-image: url(/images/landing-cover-1.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-
-    }
-
-    &--techskill {
-        grid-column: 1 / -1;
-        background-color: $color-tertiary-light;
-    }
+    grid-template-rows: min-content 10rem;
+    //grid-template-rows: 10rem 200vh 10rem;
 }

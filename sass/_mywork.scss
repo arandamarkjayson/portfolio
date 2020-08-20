@@ -1,13 +1,19 @@
 .portfolios {
-    padding: 20rem 0 0;
-    grid-column: 2 / 14;
+    padding: 20vh 0 0;
     display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(37rem, 1fr));
-    grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
-    grid-gap: 5rem;
-    margin-bottom: 20rem;
+    //grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr));
+    max-width: 164rem;
+    margin: 0 auto;
 
 
+    &__section {
+        //padding: 20rem 0 0;
+        display: grid;
+        // grid-template-rows: repeat(auto-fit, minmax(37rem, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(37rem, 1fr));
+        grid-gap: 5rem;
+        margin-bottom: 20rem;
+    }
 }
 
 .portfolio {
@@ -15,15 +21,19 @@
 
 }
 
+.portfolio-container {
+    background-color: $color-tertiary-light;
+}
+
 .image {
     width: 100%;
-
 }
 
 .image,
 .portfolio:hover .overlay {
     height: 100%;
 }
+
 
 .overlay {
     position: absolute;
@@ -39,9 +49,9 @@
 
 .text {
     color: white;
-    font-size: 3.2rem;
+    font-size: 2rem;
     position: absolute;
-    font-weight: 500;
+    font-weight: 700;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -50,12 +60,4 @@
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.sidebar {
-    grid-column: 2 / 5;
-    padding: 20vh 0 0;
-    display: grid;
-    grid-gap: 5rem;
-
 }

@@ -1,21 +1,39 @@
 .footer-container {
     background-color: $color-tertiary;
-    grid-column: 1 /-1;
 }
 
 .footer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min-content, 54.66rem));
-    padding: 4rem 0;
     max-width: 164rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     margin: 0 auto;
-    grid-auto-flow: column;
+    padding: 3.3rem 0;
     justify-items: center;
-    font-size: 1.4rem;
-    color: $color-secondary;
 
     @media only screen and (max-width: $bp-smallest) {
-        grid-auto-flow: row;
-        justify-self: start;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        line-height: 2;
+        text-align: center;
+        padding: 1rem;
     }
+
+    @media only screen and (max-width: $bp-small) {
+        padding: 1rem;
+    }
+
+
+
+    &__mail {
+        text-decoration: none;
+        color: $color-secondary;
+    }
+
+    &__mail:hover {
+        color: $color-primary;
+    }
+
+
 }

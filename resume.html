@@ -1,103 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Resume | Mark Jayson Portfolio</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="https://use.typekit.net/cfe0jvm.css" />
-    <link
-      rel="stylesheet"
-      href="/css/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css"
-    />
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume | Mark Jayson Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/cfe0jvm.css" />
+  <link rel="stylesheet" href="/css/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css" />
 
-  <body>
-    <div class="container">
-      <div class="header-container sticky">
-        <header class="header">
-          <nav class="nav">
-            <a class="nav__list--main" href="index.html">Home</a>
-            <a class="nav__list--main selected" href="resume.html">Resume</a>
-            <a class="nav__list--main" href="portfolio.html">Portfolio</a>
-          </nav>
-          <img src="images/logo.png" class="logo__main" />
-          <nav class="nav nav--left">
-            <a
-              class="nav__list--social"
-              href="https://www.behance.net/mjayarandagraphics"
-              target="_blank"
-              >Behance</a
-            >
-            <a
-              class="nav__list--social"
-              href="https://www.linkedin.com/in/markjaysona/"
-              target="_blank"
-              >Linkedin</a
-            >
-          </nav>
-        </header>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="header-container sticky">
+      <header class="header">
+        <nav class="nav__main">
+          <a href="index.html" class="link__main">Home</a>
+          <a href="resume.html" class="link__main selected">Resume</a>
+          <a href="portfolio.html" class="link__main">Portfolio</a>
+        </nav>
+        <img src="/images/logo.png" alt="" class="logo__header">
+        <nav class="nav__social">
+          <a href="https://www.behance.net/mjayarandagraphics" class="link__social" target="_blank">Behance</a>
+          <a href="https://www.linkedin.com/in/markjaysona/" class="link__social" target="_blank">Linkedin</a>
+      </header>
+    </div>
+
+    <div class="resume-container">
+      <div class="intro-container">
+        <section class="intro-resume">
+          <img src="/images/resume-picture.png" alt="" class="resume-picture">
+          <h4 class="heading__4 margin-bottom">Hi I'm</h4>
+          <h1 class="heading__1">Mark Jayson <br><span class="heading__1--lastname">Aranda</span> </h1>
+          <h4 class="heading__4 margin-top">Web & Graphic Designer</h4>
+
+          <p class="description">A highly talented, driven, and flexible web & graphic designer with a proven record of
+            delivering creative and innovative design solutions. Able to work as part of a team. </p>
+        </section>
+
       </div>
 
-      <div class="content-bg--resume">
-        <section class="content__main">
-          <img src="/images/resume-picture.png" alt="" class="resume-picture" />
-          <h3 class="heading-3 margin__bottom">Hi I'm</h3>
-          <h1 class="heading-1">
-            Mark Jayson<br />
-            <span class="last--name">Aranda</span>
-          </h1>
-          <h3 class="heading-3 margin__top">Web and Graphics Designer</h3>
-          <p class="description">
-            A highly talented, driven, and flexible web & graphic designer with
-            a proven record of delivering creative and innovative design
-            solutions. Able to work as part of a team.
-          </p>
+      <img src="/images/arrow-down.png" alt="" class="arrow-down">
 
-          <img src="/images/arrow-down.png" alt="" class="arrow-down" />
+      <div class="keyskill__container">
+        <section class="keyskill--grid">
+          <h3 class="heading__3--skill">
+            01 <span class="span--green"> Key Skill</span>
+          </h3>
+
+          <section class="keyskill--section">
+            <ul class="keyskill--right">
+              <li class="skills__list">Brochure Design</li>
+              <li class="skills__list">Packaging Design</li>
+              <li class="skills__list">Logo Design</li>
+              <li class="skills__list">Branding</li>
+              <li class="skills__list">Poster Design</li>
+              <li class="skills__list">Photography</li>
+            </ul>
+            <ul class="keyskill">
+              <li class="skills__list">E-Newsletter Design</li>
+              <li class="skills__list">Web & Banner Design</li>
+              <li class="skills__list">Homepage & Landing Page Design</li>
+              <li class="skills__list">Interactive Prototyping</li>
+              <li class="skills__list">Wireframing</li>
+              <li class="skills__list">Front end Web Development</li>
+            </ul>
+          </section>
+
         </section>
       </div>
 
-      <section class="content__main--section-keyskill">
-        <h2 class="heading-2__skill--title margin-titles">
-          <span class="heading-2__skill--title-white">01</span> Key Skill
-        </h2>
+      <img src="/images/arrow-down.png" alt="" class="arrow-down arrow-down--bottom">
 
-        <section class="skill-1">
-          <ul class="skills skills--right">
-            <li class="skills__list">Brochure Design</li>
-            <li class="skills__list">Packaging Design</li>
-            <li class="skills__list">Logo Design</li>
-            <li class="skills__list">Branding</li>
-            <li class="skills__list">Poster Design</li>
-            <li class="skills__list">Photography</li>
-          </ul>
-          <ul class="skills skills--left">
-            <li class="skills__list">E-Newsletter Design</li>
-            <li class="skills__list">Web & Banner Design</li>
-            <li class="skills__list">Homepage & Landing Page Design</li>
-            <li class="skills__list">Interactive Prototyping</li>
-            <li class="skills__list">Wireframing</li>
-            <li class="skills__list">Front end Web Development</li>
-          </ul>
-        </section>
-        <img src="/images/arrow-down.png" alt="" class="arrow-down" />
-      </section>
 
-      <div class="content-bg--techskill">
-        <section class="content__main--section-techskill">
-          <h2 class="heading-2__skill--title margin-titles">
-            <span class="heading-2__skill--title-white">02</span> Technical
-            Skill
-          </h2>
+      <div class="techskill__container">
+        <section class="techskill--grid">
+          <h3 class="heading__3--skill">
+            02 <span class="span--green"> Technical Skill</span>
+          </h3>
 
-          <section class="techskill margin__bottom">
+          <section class="techskill">
             <span class="techskill__list">Experience Design XD</span>
             <svg class="rectangle">
               <rect class="rectangle" />
@@ -107,7 +93,7 @@
             </svg>
           </section>
 
-          <section class="techskill margin__bottom">
+          <section class="techskill">
             <span class="techskill__list">Photoshop</span>
             <svg class="rectangle">
               <rect class="rectangle" />
@@ -117,7 +103,7 @@
             </svg>
           </section>
 
-          <section class="techskill margin__bottom">
+          <section class="techskill">
             <span class="techskill__list">Illustrator</span>
             <svg class="rectangle">
               <rect class="rectangle" />
@@ -127,7 +113,7 @@
             </svg>
           </section>
 
-          <section class="techskill margin__bottom">
+          <section class="techskill">
             <span class="techskill__list">Indesign</span>
             <svg class="rectangle">
               <rect class="rectangle" />
@@ -137,7 +123,7 @@
             </svg>
           </section>
 
-          <section class="techskill margin__bottom">
+          <section class="techskill">
             <span class="techskill__list">Dreamweaver</span>
             <svg class="rectangle">
               <rect class="rectangle" />
@@ -147,7 +133,7 @@
             </svg>
           </section>
 
-          <section class="techskill margin__bottom">
+          <section class="techskill">
             <span class="techskill__list">After Effects</span>
             <svg class="rectangle">
               <rect class="rectangle" />
@@ -157,7 +143,7 @@
             </svg>
           </section>
 
-          <section class="techskill margin__bottom">
+          <section class="techskill">
             <span class="techskill__list">Premiere Pro</span>
             <svg class="rectangle">
               <rect class="rectangle" />
@@ -167,7 +153,7 @@
             </svg>
           </section>
 
-          <section class="techskill margin__bottom">
+          <section class="techskill">
             <span class="techskill__list">Lightroom</span>
             <svg class="rectangle">
               <rect class="rectangle" />
@@ -177,7 +163,7 @@
             </svg>
           </section>
 
-          <section class="techskill margin__bottom">
+          <section class="techskill">
             <span class="techskill__list">Sketch</span>
             <svg class="rectangle">
               <rect class="rectangle" />
@@ -187,8 +173,18 @@
             </svg>
           </section>
 
-          <section class="techskill margin__bottom">
+          <section class="techskill">
             <span class="techskill__list">CSS3 / HTML5</span>
+            <svg class="rectangle">
+              <rect class="rectangle" />
+            </svg>
+            <svg class="rectangle">
+              <rect class="rectangle__yellow--10" />
+            </svg>
+          </section>
+
+          <section class="techskill">
+            <span class="techskill__list">Photography</span>
             <svg class="rectangle">
               <rect class="rectangle" />
             </svg>
@@ -197,30 +193,157 @@
             </svg>
           </section>
 
-          <section class="techskill margin__bottom">
-            <span class="techskill__list">Photography</span>
-            <svg class="rectangle">
-              <rect class="rectangle" />
-            </svg>
-            <svg class="rectangle">
-              <rect class="rectangle__yellow--12" />
-            </svg>
-          </section>
-
-          <img src="/images/arrow-down.png" alt="" class="arrow-down" />
         </section>
       </div>
 
-      <div class="footer-container">
-        <footer class="footer">
-          <a class="footer__email" href="mailto:arandamarkjayson@gmail.com"
-            >arandamarkjayson@gmail.com</a
-          >
-          <span class="footer__contact">+971 55 6078853</span>
 
-          <p class="copyright">© 2020 Mark Jayson Aranda</p>
-        </footer>
+      <img src="/images/arrow-down.png" alt="" class="arrow-down arrow-down--bottom">
+
+      <div class="career__container">
+        <section class="career--grid">
+          <h3 class="heading__3--skill career--title">
+            03<span class="span--green"> career history</span>
+          </h3>
+          <section class="career__section--noon">
+            <section class="career--right">
+              <img src="/images/noon-logo.jpg" alt="" class="career--logo">
+              <h4 class="heading__4 heading__4--company">noon</h4>
+              <p class="career--year">November 2016 - June 2020</p>
+            </section>
+
+            <section class="career--right">
+              <h5 class="heading__5--designation">Graphic Designer</h5>
+              <li class="career--list">Created mock up for each every task that has multiple banners in one landing page
+                to check the overall look and feel of the page.
+              </li>
+
+
+              <li class="career--list">Designed day to day banners for fashion, beauty, electronics, sports, baby &
+                toys and other categories needed on the business.
+              </li>
+
+
+              <li class="career--list">Collaborated with other graphic designers and to onsite team for major task.
+              </li>
+
+              <a href="portfolio.html" class="career__portfolio--link">view portfolio</a>
+            </section>
+          </section>
+
+          <section class="career__section--sivvi">
+            <section class="career--left">
+              <img src="/images/sivvi-logo.jpg" alt="" class="career--logo">
+              <h4 class="heading__4 heading__4--company">SIVVI owned by noon</h4>
+              <p class="career--year">November 2016 - June 2020</p>
+            </section>
+
+            <section class="career--left">
+              <h5 class="heading__5--designation">Graphic Designer</h5>
+              <li class="career--list">Created mock up for each every task that has multiple banners in one landing page
+                to check the overall look and feel of the page.
+              </li>
+
+
+              <li class="career--list">Designed new logo for kidswear brand including hang tags and woven labels.
+              </li>
+
+
+              <li class="career--list">Designed and developed 2-3 e-newsletter per day to be sent out for marketing.
+              </li>
+
+              <li class="career--list">Designed and conceptualized major campaigns.
+              </li>
+
+              <li class="career--list">Designed day to day banners needed on the business.
+              </li>
+
+              <li class="career--list">Collaborated with other graphic designers, photographers, project managers, web
+                and app developers for major changes on the look and feel of the app.
+              </li>
+
+              <li class="career--list">Managed day to day uploads of banners to the app, mobile and desktop site.
+              </li>
+
+
+              <a href="portfolio.html" class="career__portfolio--link">view portfolio</a>
+            </section>
+          </section>
+
+          <section class="career__section--gwd">
+            <section class="career--right">
+              <img src="/images/gwd-logo.jpg" alt="" class="career--logo">
+              <h4 class="heading__4 heading__4--company">Gulf Worldwide Distribution FZE</h4>
+              <p class="career--year">October 2012 - October 2016</p>
+            </section>
+
+            <section class="career--right">
+              <h5 class="heading__5--designation">Web & Graphic Designer</h5>
+
+              <li class="career--list"> Designed and produced marketing materials including brochures, flyers, posters,
+                business cards, truck branding, stickers, t-shirt design, invoice, vouchers, roll up banners,
+                presentations more. </li>
+
+              <li class="career--list">Designed a new logo for battery products and product packaging from scratch to
+                finish product.
+              </li>
+
+              <li class="career--list">Managed all company existing websites.</li>
+
+              <li class="career--list">Designed and developed 2 websites from scratch.
+              </li>
+
+              <li class="career--list">Designed and developed e-newsletter for the company to be sent out once or twice
+                a month.
+              </li>
+              <li class="career--list">Created banners for social media marketing.</li>
+
+              <li class="career--list">Designed website sliders & banners for company website.</li>
+              <li class="career--list">Performed product & event photography.</li>
+              <li class="career--list">Structured designs to be printable and worked with printing supplier to ensure
+                the output quality we required is met.</li>
+              <a href="portfolio.html" class="career__portfolio--link">view portfolio</a>
+            </section>
+          </section>
+
+          <img class="career--line" src="/images/line.png">
+          <img class="career--line-square-1" src="/images/square.png">
+          <img class="career--line-square-2" src="/images/square.png">
+          <img class="career--line-square-3" src="/images/square.png">
+
+        </section>
+      </div>
+
+      <img src="/images/arrow-down.png" alt="" class="arrow-down arrow-down--bottom">
+
+
+      <div class="education__container">
+        <section class="education--grid">
+          <h3 class="heading__3--skill">
+            04 <span class="span--green"> Education</span>
+          </h3>
+
+          <img src="/images/sti-logo.jpg" alt="" class="education--logo">
+          <h4 class="heading__4 heading__4--company">STI College Recto</h4>
+          <h5 class="heading__5--course">Bachelor Of Science Information Technology</h5>
+          <p class="career--year">November 2016 - June 2020</p>
+
+          <img src="/images/arrow-down.png" alt="" class="arrow-down arrow-down--top">
+
+          <div class="btn-container">
+            <a href="resume.html"> <button class="button">Download My Resume</button></a>
+          </div>
+        </section>
       </div>
     </div>
-  </body>
+
+    <div class="footer-container">
+      <footer class="footer">
+        <a class="footer__mail" href="mailto:arandamarkjayson@gmail.com">arandamarkjayson@gmail.com</a>
+        <p class="footer__number">+971 556078853</p>
+        <p class="footer__copyright">© 2020 Mark Jayson Aranda</p>
+      </footer>
+    </div>
+  </div>
+</body>
+
 </html>
