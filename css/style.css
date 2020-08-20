@@ -230,8 +230,7 @@ a:hover {
     .btn-container {
       display: flex;
       flex-direction: column;
-      justify-items: center;
-      row-gap: 2rem; } }
+      justify-items: center; } }
 
 .button {
   width: 34.2rem;
@@ -243,6 +242,9 @@ a:hover {
   background-color: #00d646;
   color: #fff;
   border: none; }
+  @media only screen and (max-width: 37.5em) {
+    .button {
+      margin-bottom: 2rem; } }
 
 .button:hover {
   background-color: #fff;
@@ -338,6 +340,10 @@ a:hover {
     padding: 15vh 0;
     justify-content: center;
     grid-row-gap: 4rem; }
+    @media only screen and (max-width: 37.5em) {
+      .techskill--grid {
+        justify-content: start;
+        padding: 15vh 2rem; } }
 
 .career__container {
   background-color: #000; }

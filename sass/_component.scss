@@ -90,7 +90,6 @@
         display: flex;
         flex-direction: column;
         justify-items: center;
-        row-gap: 2rem;
     }
 }
 
@@ -104,6 +103,10 @@
     background-color: $color-primary;
     color: $color-secondary;
     border: none;
+
+    @media only screen and (max-width: $bp-smallest) {
+        margin-bottom: 2rem;
+    }
 }
 
 .button:hover {
