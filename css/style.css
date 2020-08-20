@@ -325,7 +325,8 @@ a:hover {
   color: #00d646; }
 
 .techskill {
-  font-size: 1.6rem; }
+  font-size: 1.6rem;
+  padding-left: 2rem; }
   .techskill__container {
     background-color: #090909; }
   .techskill__list {
@@ -342,8 +343,9 @@ a:hover {
     grid-row-gap: 4rem; }
     @media only screen and (max-width: 37.5em) {
       .techskill--grid {
-        justify-content: start;
-        padding: 15vh 2rem; } }
+        justify-self: center;
+        display: flex;
+        flex-direction: column; } }
 
 .career__container {
   background-color: #000; }
