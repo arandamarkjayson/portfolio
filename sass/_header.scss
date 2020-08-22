@@ -70,11 +70,13 @@ a:hover {
     &__header {
         max-width: 14.4rem;
         justify-self: center;
+
+        @media only screen and (max-width: $bp-medium) {
+            width: 10.4rem;
+        }
     }
 
-    @media only screen and (min-width: $bp-medium) {
-        max-width: 10.4rem;
-    }
+
 }
 
 
@@ -115,7 +117,7 @@ a:hover {
 }
 
 .topnav a.icon {
-    margin-top: 1rem;
+
     background: black;
     display: block;
     position: absolute;

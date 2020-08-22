@@ -109,7 +109,7 @@
 
 .techskill {
     font-size: 1.6rem;
-
+    margin: 0 2rem;
 
     &__container {
         background-color: $color-tertiary-light;
@@ -169,6 +169,7 @@
         @media only screen and (max-width: $bp-smallest) {
             display: flex;
             flex-direction: column;
+            row-gap: 2rem;
         }
 
     }
@@ -177,6 +178,7 @@
         display: grid;
         grid-column-gap: 7.4rem;
         font-size: 1.6rem;
+        margin-bottom: 2rem;
 
 
         &--sivvi {
@@ -355,7 +357,7 @@
 
     @media only screen and (max-width: $bp-smallest) {
         width: 100%;
-        max-width: 60rem;
+        max-width: 46rem;
         min-width: 4%;
     }
 
