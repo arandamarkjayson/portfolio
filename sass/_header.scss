@@ -1,9 +1,6 @@
 .header-container {
     background-color: rgba($color-tertiary, .5);
     z-index: 99;
-
-
-
 }
 
 .sticky {
@@ -21,7 +18,7 @@
     padding: 3.3rem 0;
     justify-content: space-evenly;
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-medium) {
         display: none;
     }
 }
@@ -73,9 +70,13 @@ a:hover {
     &__header {
         max-width: 14.4rem;
         justify-self: center;
+    }
 
+    @media only screen and (min-width: $bp-medium) {
+        max-width: 10.4rem;
     }
 }
+
 
 
 
@@ -83,14 +84,13 @@ a:hover {
     max-width: 100%;
     margin: auto;
     // height: 500px;
-    color: white;
-    border-radius: 10px;
 
-    @media only screen and (min-width: $bp-smallest) {
+
+    @media only screen and (min-width: $bp-medium) {
         display: none;
     }
 
-    @media only screen and (max-width: $bp-smallest) {
+    @media only screen and (max-width: $bp-medium) {
         display: block;
     }
 }
@@ -98,7 +98,7 @@ a:hover {
 
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: $color-tertiary;
     position: relative;
 }
 
@@ -115,19 +115,10 @@ a:hover {
 }
 
 .topnav a.icon {
+    margin-top: 1rem;
     background: black;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
-}
-
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-.active {
-    background-color: #4CAF50;
-    color: white;
 }

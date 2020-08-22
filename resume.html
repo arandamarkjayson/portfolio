@@ -17,18 +17,54 @@
 <body>
   <div class="wrapper">
     <div class="header-container sticky">
+
+
+      <div class="mobile-container">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href=""><img src="/images/logo.png" alt="" class="logo__header"></a>
+
+          <nav id="myLinks">
+            <a href="index.html" class="link__main selected">Home</a>
+            <a href="resume.html" class="link__main">Resume</a>
+            <a href="portfolio.html" class="link__main">Portfolio</a>
+          </nav>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+        <!-- End smartphone / tablet look -->
+      </div>
+
+      <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+      </script>
+
+
+
       <header class="header">
+
         <nav class="nav__main">
-          <a href="index.html" class="link__main">Home</a>
-          <a href="resume.html" class="link__main selected">Resume</a>
+          <a href="index.html" class="link__main selected">Home</a>
+          <a href="resume.html" class="link__main">Resume</a>
           <a href="portfolio.html" class="link__main">Portfolio</a>
         </nav>
         <img src="/images/logo.png" alt="" class="logo__header">
         <nav class="nav__social">
           <a href="https://www.behance.net/mjayarandagraphics" class="link__social" target="_blank">Behance</a>
           <a href="https://www.linkedin.com/in/markjaysona/" class="link__social" target="_blank">Linkedin</a>
+
       </header>
     </div>
+
 
     <div class="resume-container">
       <div class="intro-container">

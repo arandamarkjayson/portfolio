@@ -44,7 +44,7 @@ body {
   margin: 0 auto;
   padding: 3.3rem 0;
   justify-content: space-evenly; }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 67.5em) {
     .header {
       display: none; } }
 
@@ -78,21 +78,23 @@ a:hover {
   max-width: 14.4rem;
   justify-self: center; }
 
+@media only screen and (min-width: 67.5em) {
+  .logo {
+    max-width: 10.4rem; } }
+
 .mobile-container {
   max-width: 100%;
-  margin: auto;
-  color: white;
-  border-radius: 10px; }
-  @media only screen and (min-width: 37.5em) {
+  margin: auto; }
+  @media only screen and (min-width: 67.5em) {
     .mobile-container {
       display: none; } }
-  @media only screen and (max-width: 37.5em) {
+  @media only screen and (max-width: 67.5em) {
     .mobile-container {
       display: block; } }
 
 .topnav {
   overflow: hidden;
-  background-color: #333;
+  background-color: #000;
   position: relative; }
 
 .topnav #myLinks {
@@ -106,19 +108,12 @@ a:hover {
   display: block; }
 
 .topnav a.icon {
+  margin-top: 1rem;
   background: black;
   display: block;
   position: absolute;
   right: 0;
   top: 0; }
-
-.topnav a:hover {
-  background-color: #ddd;
-  color: black; }
-
-.active {
-  background-color: #4CAF50;
-  color: white; }
 
 .home-container {
   background-image: url(/images/landing-cover-1.jpg);
