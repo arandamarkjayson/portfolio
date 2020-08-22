@@ -529,7 +529,8 @@ a:hover {
   -webkit-animation: 3s ease-out 0s 1 slideInFromLeft; }
 
 .rectangle {
-  width: 30rem;
+  width: 100%;
+  max-width: 30rem;
   height: 2rem;
   fill: #fff;
   position: absolute;
@@ -537,8 +538,7 @@ a:hover {
   @media only screen and (max-width: 37.5em) {
     .rectangle {
       width: 100%;
-      max-width: 38rem;
-      min-width: 4%; } }
+      max-width: 38rem; } }
   .rectangle__yellow--1 {
     width: 25rem; }
   .rectangle__yellow--2 {
