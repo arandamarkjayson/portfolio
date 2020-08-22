@@ -33,9 +33,14 @@
         text-transform: uppercase;
         justify-self: center;
         margin-bottom: 8.6rem;
-    }
 
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 3.5rem;
+        }
+    }
 }
+
+
 
 .heading__4 {
     font-size: 3rem;

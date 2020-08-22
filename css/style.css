@@ -232,6 +232,9 @@ a:hover {
     text-transform: uppercase;
     justify-self: center;
     margin-bottom: 8.6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .heading__3--skill {
+        font-size: 3.5rem; } }
 
 .heading__4 {
   font-size: 3rem;
@@ -367,8 +370,7 @@ a:hover {
   color: #00d646; }
 
 .techskill {
-  font-size: 1.6rem;
-  margin: 0 2rem; }
+  font-size: 1.6rem; }
   .techskill__container {
     background-color: #090909; }
   .techskill__list {
@@ -535,7 +537,7 @@ a:hover {
   @media only screen and (max-width: 37.5em) {
     .rectangle {
       width: 100%;
-      max-width: 46rem;
+      max-width: 38rem;
       min-width: 4%; } }
   .rectangle__yellow--1 {
     width: 25rem; }
