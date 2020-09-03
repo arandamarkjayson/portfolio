@@ -12,86 +12,247 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="/css/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
   <div class="wrapper">
-    <div class="header-container sticky">
-
-
-      <div class="mobile-container">
-
-        <!-- Top Navigation Menu -->
-        <div class="topnav">
-          <a href=""><img src="/images/logo.png" alt="" class="logo__header"></a>
-
-          <nav id="myLinks">
-            <a href="index.html" class="link__main selected">Home</a>
-            <a href="resume.html" class="link__main">Resume</a>
-            <a href="portfolio.html" class="link__main">Portfolio</a>
-          </nav>
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-        </div>
-        <!-- End smartphone / tablet look -->
-      </div>
-
-      <script>
-        function myFunction() {
-          var x = document.getElementById("myLinks");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
-        }
-      </script>
-
-
-
-      <header class="header">
-
-        <nav class="nav__main">
-          <a href="index.html" class="link__main selected">Home</a>
-          <a href="resume.html" class="link__main">Resume</a>
-          <a href="portfolio.html" class="link__main">Portfolio</a>
-        </nav>
+    <div class="sidebar-container">
+      <div class="sidebar">
         <img src="/images/logo.png" alt="" class="logo__header">
-        <nav class="nav__social">
+        <nav class="nav__main">
+          <a href="#" class="link__main selected">Home</a>
+          <a href="#portfolio" class="link__main">Portfolio</a>
+          <a href="#skill" class="link__main selected">Key Skills</a>
+          <a href="#techskill" class="link__main">Technical Skills</a>
+          <a href="#education" class="link__main">Education</a>
           <a href="https://www.behance.net/mjayarandagraphics" class="link__social" target="_blank">Behance</a>
           <a href="https://www.linkedin.com/in/markjaysona/" class="link__social" target="_blank">Linkedin</a>
+        </nav>
+        <section class="email__section">
+          <h5 class="heading__5--email">EMAIL</h5>
+          <a class="sidebar__mail" href="mailto:arandamarkjayson@gmail.com">arandamarkjayson@gmail.com</a>
+        </section>
 
-      </header>
+        <section class="contact__section">
+          <h5 class="heading__5--email">CONTACT</h5>
+          <p class="sidebar__contact">+971 556078853</p>
+        </section>
+
+      </div>
     </div>
 
-
-
-    <div class="home-container">
+    <div id="home" class="home-container">
       <section class="intro">
         <h4 class="heading__4 margin-bottom">Hi I'm</h4>
-        <h1 class="heading__1">Mark Jayson <br><span class="heading__1--lastname">Aranda</span> </h1>
+        <h1 class="heading__1">
+          Mark Jayson <br /><span class="heading__1--lastname">Aranda</span>
+        </h1>
         <h4 class="heading__4 margin-top">Web & Graphic Designer</h4>
+        <p class="description">
+          A highly talented, driven, and flexible web & graphic designer with
+          a proven record of delivering creative and innovative design
+          solutions. Able to work as part of a team.</p>
 
         <div class="btn-container">
-          <a href="resume.html"> <button class="button">Download My Resume</button></a>
-          <a href="resume.html"> <button class="button">View My Portfolio</button></a>
+          <a href="resume.html">
+            <button class="button">Download My Resume</button></a>
         </div>
       </section>
     </div>
 
+    <div id="portfolio" class="portfolio-container">
+      <section class="portfolios">
+
+        <h4 class="heading__4 margin-bottom">02 <span class="heading__4--green">KEY SKILLS</span></h4>
+
+        <section class="portfolios__section">
+          <a href="portfolio.html">
+            <div class="portfolio">
+              <img class="image" src="./images/default-image.jpg" alt="">
+              <div class="overlay">
+                <div class="text">noon.com</div>
+              </div>
+            </div>
+          </a>
+          <a href="portfolio.html">
+            <div class="portfolio">
+              <img class="image" src="./images/default-image.jpg" alt="">
+              <div class="overlay">
+                <div class="text">SIVVI</div>
+              </div>
+            </div>
+          </a>
+          <a href="portfolio.html">
+            <div class="portfolio">
+              <img class="image" src="./images/default-image.jpg" alt="">
+              <div class="overlay">
+                <div class="text">GWD FZE</div>
+              </div>
+            </div>
+          </a>
+          <a href="portfolio.html">
+            <div class="portfolio">
+              <img class="image" src="./images/default-image.jpg" alt="">
+              <div class="overlay">
+                <div class="text">Personal Project</div>
+              </div>
+            </div>
+          </a>
+
+        </section>
 
 
-
-    <div class="footer-container">
-      <footer class="footer">
-        <a class="footer__mail" href="mailto:arandamarkjayson@gmail.com">arandamarkjayson@gmail.com</a>
-        <p class="footer__number">+971 556078853</p>
-        <p class="footer__copyright">© 2020 Mark Jayson Aranda</p>
-      </footer>
+      </section>
     </div>
+
+
+    <div id="skill" class="skill-container">
+      <section class="keyskills">
+        <h4 class="heading__4 margin-bottom">02 <span class="heading__4--green">KEY SKILLS</span></h4>
+        <section class="keyskills__item">
+          <li class="keyskills__item--list">Web Banner Design</li>
+          <li class="keyskills__item--list">Website Design</li>
+          <li class="keyskills__item--list">Wireframing</li>
+          <li class="keyskills__item--list">Interactive Prototyping</li>
+          <li class="keyskills__item--list">Photography</li>
+          <li class="keyskills__item--list">E-Newsletter Design</li>
+          <li class="keyskills__item--list">Front end Web Development</li>
+          <li class="keyskills__item--list">Logo Design</li>
+          <li class="keyskills__item--list">Brochure Design</li>
+          <li class="keyskills__item--list">Branding</li>
+          <li class="keyskills__item--list">Poster Design</li>
+          <li class="keyskills__item--list">Packaging Design</li>
+          <li class="keyskills__item--list">Presentation Design</li>
+          <li class="keyskills__item--list">Photo Editing</li>
+        </section>
+      </section>
+      </section>
+    </div>
+
+    <div id="techskill" class="techskill-container">
+      <div class="techskills">
+        <h4 class="heading__4 margin-bottom">03 <span class="heading__4--green">TECHNICAL SKILLS</span></h4>
+        <div class="techskills__grid">
+          <section>
+            <li class="techskills__item--list">Experience Design XD</li>
+            <svg class="rectangle">
+              <rect class="rectangle"></rect>
+              <rect class="rectangle__yellow--1"></rect>
+            </svg>
+          </section>
+
+          <section>
+            <li class="techskills__item--list">Photoshop</li>
+            <svg class="rectangle">
+              <rect class="rectangle"></rect>
+              <rect class="rectangle__yellow--1"></rect>
+            </svg>
+          </section>
+
+          <section>
+            <li class="techskills__item--list">Illustrator</li>
+            <svg class="rectangle">
+              <rect class="rectangle"></rect>
+              <rect class="rectangle__yellow--1"></rect>
+            </svg>
+          </section>
+
+          <section>
+            <li class="techskills__item--list">Indesign</li>
+            <svg class="rectangle">
+              <rect class="rectangle"></rect>
+              <rect class="rectangle__yellow--1"></rect>
+            </svg>
+          </section>
+
+          <section>
+            <li class="techskills__item--list">Dreamweaver</li>
+            <svg class="rectangle">
+              <rect class="rectangle"></rect>
+              <rect class="rectangle__yellow--1"></rect>
+            </svg>
+          </section>
+
+          <section>
+            <li class="techskills__item--list">After Effects</li>
+            <svg class="rectangle">
+              <rect class="rectangle"></rect>
+              <rect class="rectangle__yellow--1"></rect>
+            </svg>
+          </section>
+
+          <section>
+            <li class="techskills__item--list">Premiere Pro</li>
+            <svg class="rectangle">
+              <rect class="rectangle"></rect>
+              <rect class="rectangle__yellow--1"></rect>
+            </svg>
+          </section>
+          <section>
+            <li class="techskills__item--list">Lightroom</li>
+            <svg class="rectangle">
+              <rect class="rectangle"></rect>
+              <rect class="rectangle__yellow--1"></rect>
+            </svg>
+          </section>
+
+          <section>
+            <li class="techskills__item--list">Sketch</li>
+            <svg class="rectangle">
+              <rect class="rectangle"></rect>
+              <rect class="rectangle__yellow--1"></rect>
+            </svg>
+          </section>
+
+          <section>
+            <li class="techskills__item--list">HTML5 / CSS3</li>
+            <svg class="rectangle">
+              <rect class="rectangle"></rect>
+              <rect class="rectangle__yellow--1"></rect>
+            </svg>
+          </section>
+
+          <section>
+            <li class="techskills__item--list">Photography</li>
+            <svg class="rectangle">
+              <rect class="rectangle"></rect>
+              <rect class="rectangle__yellow--1"></rect>
+            </svg>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <div id="education" class="education-container">
+      <section class="educations">
+        <h4 class="heading__4 margin-bottom port">04 <span class="heading__4--green">Education</span></h4>
+        <section class="educations__item">
+          <section class="educations__item--list">
+            <img class="educations__image" src="images/sti-logo.jpg">
+            <section>
+              <h2 class="educations__item--school">STI College Recto</h2>
+              <p class="educations__item--course">Bachelor Of Science Information Technology</p>
+              <p class="educations__item--date">Nov 2016 - June 2020</p>
+            </section>
+          </section>
+          <section class="educations__item--list">
+            <img class="educations__image" src="images/udemy-logo.jpg">
+            <section>
+              <h2 class="educations__item--school">Udemy Online Course</h2>
+              <p class="educations__item--course">Adobe CC Masterclass</p>
+              <p class="educations__item--date">April 2020</p>
+            </section>
+          </section>
+        </section>
+      </section>
+    </div>
+
   </div>
+
+
+
+
 </body>
 
 </html>

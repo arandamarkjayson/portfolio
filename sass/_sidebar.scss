@@ -1,0 +1,61 @@
+.sidebar-container {
+    grid-row: 1 /-1;
+    background-color: $color-tertiary;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    height: 200rem;
+    width: 43.2rem;
+}
+
+.sidebar {
+    padding: 7.2rem;
+
+    &__mail {
+        color: $color-secondary;
+        text-decoration: none;
+        font-size: 1.6rem;
+
+    }
+
+    &__contact {
+        color: $color-secondary;
+        font-size: 1.6rem;
+    }
+}
+
+.logo__header {
+    max-width: 14rem;
+}
+
+.description {
+    margin: 8.9rem 0 0;
+    font-size: 2rem;
+    max-width: 79.4rem;
+    color: #fff;
+    line-height: 3.2rem;
+    text-align: left;
+}
+
+
+.nav__main a {
+    display: block;
+    padding: 16px 0;
+    text-decoration: none;
+    color: $color-secondary;
+    font-size: 1.8rem;
+}
+
+a:hover {
+    color: $color-primary;
+}
+
+.nav__main {
+    margin: 12.7rem 0;
+}
+
+
+.email__section {
+    margin-bottom: 3.8rem;
+}
