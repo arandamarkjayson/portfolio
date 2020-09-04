@@ -1,5 +1,5 @@
 .home-container {
-    grid-column: 2 /-1;
+    grid-column-start: 2;
     background-image: url(/images/home-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -22,7 +22,6 @@
     @media only screen and (max-width: $bp-smallest) {
         padding: 18vh 10.7vw;
         justify-items: center;
-
     }
 }
 
@@ -38,7 +37,6 @@
         text-align: center;
     }
 }
-
 
 .portfolio-container {
     grid-column: 2 /-1;
@@ -209,10 +207,90 @@
 
 
 
+.experience-container {
+    grid-column: 2 /-1;
+    grid-row: 5 / 6;
+    background-color: $color-tertiary-dark-1;
+
+    @media only screen and (max-width: $bp-smallest) {
+        grid-column: 1 /-1;
+
+    }
+}
+
+.experiences {
+    display: grid;
+    grid-template-rows: min-content min-content;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 8.4vw;
+    grid-column-gap: 14rem;
+    //grid-row-gap: 10rem;
+
+
+
+    &__image {
+        width: 10rem;
+    }
+
+    &__item {
+        display: flex;
+        column-gap: 10rem;
+        flex-wrap: wrap;
+        row-gap: 5rem;
+
+        &--list {
+            list-style: none;
+            font-size: 2rem;
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            grid-column-gap: 3.2rem;
+            line-height: 2;
+            grid-row-gap: 2.5rem;
+            align-content: start;
+        }
+
+        &--school {
+            color: $color-primary;
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+
+        &--date {
+            font-size: 1.4rem;
+        }
+
+        &--course {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+
+        &--course {
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+
+        &--task {
+            font-size: 1.4rem;
+            grid-column: 1/-1;
+        }
+
+        &--position {
+            font-size: 1.4rem;
+            font-weight: 700;
+            grid-column: 1/-1;
+        }
+
+
+    }
+
+}
+
+
 .education-container {
     grid-column: 2 /-1;
-    grid-row: 5 / -1;
-    background-color: $color-tertiary-dark-1;
+    grid-row: 6 / -1;
+    background-color: $color-tertiary-dark;
 
     @media only screen and (max-width: $bp-smallest) {
         grid-column: 1 /-1;
@@ -242,6 +320,7 @@
             font-size: 2rem;
             display: grid;
             grid-template-columns: min-content 1fr;
+            grid-template-rows: min-content min-content;
             grid-column-gap: 3.2rem;
             line-height: 2;
         }
@@ -256,10 +335,7 @@
             font-size: 1.4rem;
         }
 
-        &--course {
-            font-size: 1.4rem;
-            font-weight: 700;
-        }
+
 
 
     }

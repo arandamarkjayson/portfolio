@@ -49,8 +49,8 @@ body {
 
 .wrapper {
     display: grid;
-    grid-template-rows: 100vh min-content min-content min-content;
-    grid-template-columns: 43.2rem 83.125vw;
+    grid-template-rows: 100vh min-content min-content min-content min-content;
+    grid-template-columns: minmax(35rem, 1fr) 83.125vw;
 
     @media only screen and (max-width: $bp-smallest) {
 
