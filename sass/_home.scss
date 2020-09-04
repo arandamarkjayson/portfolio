@@ -187,7 +187,7 @@
     height: 1rem;
     fill: #fff;
     position: relative;
-    z-index: 1;
+
 
 }
 
@@ -195,7 +195,7 @@
 .rectangle__yellow--1 {
     height: 1rem;
     fill: $color-primary;
-    z-index: 2;
+    z-index: 1;
     width: 25rem;
     position: absolute;
 }

@@ -211,13 +211,12 @@ a:hover {
   width: 32rem;
   height: 1rem;
   fill: #fff;
-  position: relative;
-  z-index: 1; }
+  position: relative; }
 
 .rectangle__yellow--1 {
   height: 1rem;
   fill: #02F093;
-  z-index: 2;
+  z-index: 1;
   width: 25rem;
   position: absolute; }
 
