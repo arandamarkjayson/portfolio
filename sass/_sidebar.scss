@@ -7,6 +7,11 @@
     overflow-x: hidden;
     height: 200rem;
     width: 43.2rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+        display: none;
+
+    }
 }
 
 .sidebar {
@@ -29,14 +34,6 @@
     max-width: 14rem;
 }
 
-.description {
-    margin: 8.9rem 0 0;
-    font-size: 2rem;
-    max-width: 79.4rem;
-    color: #fff;
-    line-height: 3.2rem;
-    text-align: left;
-}
 
 
 .nav__main a {

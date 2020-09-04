@@ -51,4 +51,11 @@ body {
     display: grid;
     grid-template-rows: 100vh min-content min-content min-content;
     grid-template-columns: 43.2rem 83.125vw;
+
+    @media only screen and (max-width: $bp-smallest) {
+
+        grid-template-columns: 1fr;
+    }
+
+
 }
