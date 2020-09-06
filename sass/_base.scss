@@ -11,9 +11,11 @@ $color-tertiary-dark-1: #2D2E38;
 
 
 //Responsive Breakpoints
-$bp-largest: 139em;
-$bp-medium: 67.5em;
-$bp-small: 56em;
+$bp-largest: 125em;
+$bp-large: 112.5em;
+$bp-mediumx: 100em;
+$bp-medium: 90em;
+$bp-small: 56.25em;
 $bp-smallest: 37.5em;
 
 * {
@@ -24,6 +26,12 @@ html {
     overflow-x: hidden;
     font-size: 62.5%; //10px /16px =62.5% -> 1rem = 10px
     scroll-behavior: smooth;
+
+
+
+    @media only screen and (max-width: $bp-mediumx) {
+        font-size: 60.5%;
+    }
 
     @media only screen and (max-width: $bp-medium) {
         font-size: 60.5%;
@@ -51,11 +59,6 @@ body {
     display: grid;
     grid-template-rows: 100vh min-content min-content min-content min-content;
     grid-template-columns: minmax(35rem, 1fr) 83.125vw;
-
-    @media only screen and (max-width: $bp-smallest) {
-
-        grid-template-columns: 1fr;
-    }
 
 
 }
