@@ -11,12 +11,10 @@ $color-tertiary-dark-1: #2D2E38;
 
 
 //Responsive Breakpoints
-$bp-largest: 125em;
-$bp-large: 112.5em;
-$bp-mediumx: 100em;
-$bp-medium: 90em;
-$bp-small: 56.25em;
-$bp-smallest: 37.5em;
+$bp-largest: 112.5em; // Extra large devices (large desktops, 2000px and below)
+$bp-large: 90em; // Large devices (desktops, 992px and up)
+$bp-medium: 56.25em; // Medium devices (tablets, 768px and up)
+$bp-smallest: 37.5em; // Small devices (landscape phones, 576px and up)
 
 * {
     margin: 0;
@@ -27,23 +25,14 @@ html {
     font-size: 62.5%; //10px /16px =62.5% -> 1rem = 10px
     scroll-behavior: smooth;
 
-
-
-    @media only screen and (max-width: $bp-mediumx) {
-        font-size: 60.5%;
+    @media only screen and (max-width: $bp-largest) {
+        font-size: 52.5%;
     }
 
     @media only screen and (max-width: $bp-medium) {
-        font-size: 60.5%;
+        font-size: 42.5%;
     }
 
-    @media only screen and (max-width: $bp-small) {
-        font-size: 50.5%;
-    }
-
-    @media only screen and (max-width: $bp-smallest) {
-        font-size: 45.5%;
-    }
 }
 
 body {
@@ -58,7 +47,11 @@ body {
 .wrapper {
     display: grid;
     grid-template-rows: 100vh min-content min-content min-content min-content;
-    grid-template-columns: minmax(35rem, 1fr) 83.125vw;
+    //grid-template-columns: minmax(25rem, 1fr) 83.125vw;
+    grid-template-columns: 36rem repeat(11, 1fr);
 
+    @media only screen and (max-width: $bp-medium) {
+        grid-template-columns: 1fr;
 
+    }
 }
