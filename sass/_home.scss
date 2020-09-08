@@ -337,12 +337,10 @@
             grid-template-columns: min-content 1fr;
             grid-template-rows: min-content min-content;
             grid-column-gap: 3.2rem;
-            line-height: 2;
+            line-height: 1.6;
             padding-bottom: 5rem;
 
-            @media only screen and (max-width: $bp-smallest) {
-                line-height: 1.6;
-            }
+
 
 
         }
