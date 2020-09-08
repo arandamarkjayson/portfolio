@@ -49,6 +49,9 @@ body {
 
 .logo__header {
   max-width: 14rem; }
+  @media only screen and (max-width: 37.5em) {
+    .logo__header {
+      max-width: 10rem; } }
 
 .nav__main a {
   display: block;
@@ -96,6 +99,9 @@ a:hover {
   right: 0;
   top: 0;
   padding: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .topnav a.icon {
+      padding: 2.5rem; } }
 
 .active {
   color: white; }

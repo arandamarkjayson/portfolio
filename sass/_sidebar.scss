@@ -30,6 +30,11 @@
 
 .logo__header {
     max-width: 14rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+        max-width: 10rem;
+    }
+
 }
 
 .nav__main a {
@@ -71,8 +76,6 @@ a:hover {
 
     @media only screen and (max-width: $bp-medium) {
         display: block;
-
-
     }
 }
 
@@ -96,9 +99,15 @@ a:hover {
     right: 0;
     top: 0;
     padding: 3rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 2.5rem;
+    }
 }
 
 
 .active {
     color: white;
+
+
 }
