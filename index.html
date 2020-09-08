@@ -12,7 +12,7 @@
     rel="stylesheet" />
   <link rel="stylesheet" href="/css/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -42,6 +42,30 @@
 
       </div>
     </div>
+
+
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <a href="#" class="active"> <img src="/images/logo.png" alt="" class="logo__header"></a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="#" class="link__main selected">Home</a>
+        <a href="#portfolio" class="link__main">Portfolio</a>
+        <a href="#skill" class="link__main selected">Key Skills</a>
+        <a href="#techskill" class="link__main">Technical Skills</a>
+        <a href="#experience" class="link__main">Experience</a>
+        <a href="#education" class="link__main">Education</a>
+        <a href="https://www.behance.net/mjayarandagraphics" class="link__social" target="_blank">Behance</a>
+        <a href="https://www.linkedin.com/in/markjaysona/" class="link__social" target="_blank">Linkedin</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+
 
     <div id="home" class="home-container">
       <section class="intro">
@@ -376,7 +400,16 @@
   </div>
 
 
-
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
 
 </body>
 
