@@ -70,7 +70,7 @@ a:hover {
 .topnav {
     display: none;
     position: fixed;
-    background-color: $color-tertiary;
+    background-color: rgba($color-tertiary, $alpha: 0.9);
     width: 100%;
     z-index: 2;
 
