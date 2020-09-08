@@ -76,9 +76,12 @@ a:hover {
 
     @media only screen and (max-width: $bp-medium) {
         display: block;
-        transition: top 0.3s;
-        /* Transition effect when sliding down (and up) */
-
+        transition: top 0.5s;
+        /*Transitioneffectwhenslidingdown(andup)*/
+        -webkit-transition: top 0.5s;
+        -moz-transition: top 0.5s;
+        -ms-transition: top 0.5s;
+        -o-transition: top 0.5s;
     }
 }
 
