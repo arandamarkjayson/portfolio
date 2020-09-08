@@ -84,9 +84,9 @@ a:hover {
 
 .topnav a {
   color: white;
-  padding: 14px 16px;
+  padding: 2rem;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 1.7rem;
   display: block; }
 
 .topnav a.icon {
@@ -94,10 +94,8 @@ a:hover {
   display: block;
   position: absolute;
   right: 0;
-  top: 0; }
-
-.topnav a:hover {
-  color: black; }
+  top: 0;
+  padding: 3rem; }
 
 .active {
   color: white; }
