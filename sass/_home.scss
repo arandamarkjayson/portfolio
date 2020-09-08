@@ -30,9 +30,6 @@
         padding: 0;
     }
 
-
-
-
 }
 
 .description {
@@ -57,19 +54,15 @@
     grid-row: 2 / 3;
     background-color: $color-tertiary-dark;
     padding: 10%;
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 5%;
+    }
 }
 
 .portfolios {
-
     display: grid;
-    //margin: 0 auto;
     max-width: 169.6rem;
-
-
-
-
-    //grid-template-rows: repeat(auto-fit, minmax(min-content, 1fr));
-    // max-width: 164rem;
 
     &__section {
         //padding: 20rem 0 0;
@@ -77,10 +70,6 @@
         // grid-template-rows: repeat(auto-fit, minmax(37rem, 1fr));
         grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         grid-gap: 3.2rem;
-
-
-
-
     }
 
 }
@@ -140,6 +129,10 @@
     grid-row: 3 / 3;
     background-color: $color-tertiary-dark-1;
     padding: 10%;
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 5%;
+    }
 }
 
 .keyskills {
@@ -167,6 +160,9 @@
     background-color: $color-tertiary-dark;
     padding: 10%;
 
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 5%;
+    }
 
 
 }
@@ -229,7 +225,9 @@
     background-color: $color-tertiary-dark-1;
     padding: 10%;
 
-
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 5%;
+    }
 }
 
 .experiences {
@@ -311,7 +309,9 @@
     background-color: $color-tertiary-dark;
     padding: 10%;
 
-
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 5%;
+    }
 
 }
 

@@ -112,6 +112,9 @@ a:hover {
   grid-row: 2 / 3;
   background-color: #22222A;
   padding: 10%; }
+  @media only screen and (max-width: 37.5em) {
+    .portfolio-container {
+      padding: 5%; } }
 
 .portfolios {
   display: grid;
@@ -165,6 +168,9 @@ a:hover {
   grid-row: 3 / 3;
   background-color: #2D2E38;
   padding: 10%; }
+  @media only screen and (max-width: 37.5em) {
+    .skill-container {
+      padding: 5%; } }
 
 .keyskills {
   grid-template-rows: min-content min-content;
@@ -182,6 +188,9 @@ a:hover {
   grid-row: 4 / 5;
   background-color: #22222A;
   padding: 10%; }
+  @media only screen and (max-width: 37.5em) {
+    .techskill-container {
+      padding: 5%; } }
 
 .techskills {
   display: grid;
@@ -220,6 +229,9 @@ a:hover {
   grid-row: 5 / 6;
   background-color: #2D2E38;
   padding: 10%; }
+  @media only screen and (max-width: 37.5em) {
+    .experience-container {
+      padding: 5%; } }
 
 .experiences {
   display: grid;
@@ -268,6 +280,9 @@ a:hover {
   grid-row: 6 / -1;
   background-color: #22222A;
   padding: 10%; }
+  @media only screen and (max-width: 37.5em) {
+    .education-container {
+      padding: 5%; } }
 
 .educations {
   display: grid;
