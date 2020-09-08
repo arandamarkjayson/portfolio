@@ -22,7 +22,7 @@ body {
 
 .wrapper {
   display: grid;
-  grid-template-rows: 100vh min-content min-content min-content min-content;
+  grid-template-rows: min-content min-content min-content min-content min-content;
   grid-template-columns: 36rem repeat(11, 1fr); }
   @media only screen and (max-width: 56.25em) {
     .wrapper {
@@ -133,13 +133,13 @@ a:hover {
   display: grid;
   justify-items: left;
   max-width: 80rem;
-  padding: 0 10% 0 0; }
+  padding: 20% 10% 20% 0; }
   @media only screen and (max-width: 90em) {
     .intro {
       grid-column: 1/-1;
       justify-items: center;
       justify-self: center;
-      padding: 0; } }
+      padding: 20% 0 20% 0; } }
   @media only screen and (max-width: 37.5em) {
     .intro {
       padding: 20% 5%; } }
@@ -267,13 +267,19 @@ a:hover {
   height: 1rem;
   fill: #fff;
   position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .rectangle {
+      width: 100%; } }
 
 .rectangle__yellow--1 {
   height: 1rem;
   fill: #02F093;
   z-index: 1;
-  width: 25rem;
+  width: 80%;
   position: absolute; }
+  @media only screen and (max-width: 37.5em) {
+    .rectangle__yellow--1 {
+      width: 80%; } }
 
 .experience-container {
   grid-column: 2/-1;

@@ -21,13 +21,13 @@
     display: grid;
     justify-items: left;
     max-width: 80rem;
-    padding: 0 10% 0 0;
+    padding: 20% 10% 20% 0;
 
     @media only screen and (max-width: $bp-large) {
         grid-column: 1/-1;
         justify-items: center;
         justify-self: center;
-        padding: 0;
+        padding: 20% 0 20% 0;
     }
 
     @media only screen and (max-width: $bp-smallest) {
@@ -212,6 +212,9 @@
     fill: #fff;
     position: relative;
 
+    @media only screen and (max-width: $bp-smallest) {
+        width: 100%;
+    }
 
 }
 
@@ -220,8 +223,12 @@
     height: 1rem;
     fill: $color-primary;
     z-index: 1;
-    width: 25rem;
+    width: 80%;
     position: absolute;
+
+    @media only screen and (max-width: $bp-smallest) {
+        width: 80%;
+    }
 }
 
 
