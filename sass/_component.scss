@@ -35,6 +35,8 @@
         justify-self: center;
         margin-bottom: 8.6rem;
     }
+
+
 }
 
 
@@ -72,12 +74,18 @@
 
 .margin-top {
     margin-top: 3.9rem;
+
+
 }
 
 .btn-container {
     display: flex;
     margin-top: 11.4rem;
     grid-column-gap: 3rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+        margin-top: 5rem;
+    }
 }
 
 .button {

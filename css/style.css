@@ -94,6 +94,9 @@ a:hover {
       justify-items: center;
       justify-self: center;
       padding: 0; } }
+  @media only screen and (max-width: 37.5em) {
+    .intro {
+      padding: 20% 5%; } }
 
 .description {
   margin: 8.9rem 0 0;
@@ -106,6 +109,9 @@ a:hover {
     .description {
       text-align: center;
       padding: 0 5rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .description {
+      margin-top: 5rem; } }
 
 .portfolio-container {
   grid-column: 2/-1;
@@ -114,7 +120,7 @@ a:hover {
   padding: 10%; }
   @media only screen and (max-width: 37.5em) {
     .portfolio-container {
-      padding: 10% 5%; } }
+      padding: 20% 5%; } }
 
 .portfolios {
   display: grid;
@@ -170,7 +176,7 @@ a:hover {
   padding: 10%; }
   @media only screen and (max-width: 37.5em) {
     .skill-container {
-      padding: 10% 5%; } }
+      padding: 20% 5%; } }
 
 .keyskills {
   grid-template-rows: min-content min-content;
@@ -190,7 +196,7 @@ a:hover {
   padding: 10% 5%; }
   @media only screen and (max-width: 37.5em) {
     .techskill-container {
-      padding: 10% 5%; } }
+      padding: 20% 5%; } }
 
 .techskills {
   display: grid;
@@ -231,7 +237,7 @@ a:hover {
   padding: 10%; }
   @media only screen and (max-width: 37.5em) {
     .experience-container {
-      padding: 10% 5%; } }
+      padding: 20% 5%; } }
 
 .experiences {
   display: grid;
@@ -282,7 +288,7 @@ a:hover {
   padding: 10%; }
   @media only screen and (max-width: 37.5em) {
     .education-container {
-      padding: 10% 5%; } }
+      padding: 20% 5%; } }
 
 .educations {
   display: grid;
@@ -364,6 +370,9 @@ a:hover {
   display: flex;
   margin-top: 11.4rem;
   grid-column-gap: 3rem; }
+  @media only screen and (max-width: 37.5em) {
+    .btn-container {
+      margin-top: 5rem; } }
 
 .button {
   width: 34.2rem;

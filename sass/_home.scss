@@ -30,6 +30,10 @@
         padding: 0;
     }
 
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 20% 5%;
+    }
+
 }
 
 .description {
@@ -45,6 +49,10 @@
         padding: 0 5rem;
     }
 
+    @media only screen and (max-width: $bp-smallest) {
+        margin-top: 5rem;
+    }
+
 
 
 }
@@ -56,7 +64,7 @@
     padding: 10%;
 
     @media only screen and (max-width: $bp-smallest) {
-        padding: 10% 5%;
+        padding: 20% 5%;
     }
 }
 
@@ -131,7 +139,7 @@
     padding: 10%;
 
     @media only screen and (max-width: $bp-smallest) {
-        padding: 10% 5%;
+        padding: 20% 5%;
     }
 }
 
@@ -161,7 +169,7 @@
     padding: 10% 5%;
 
     @media only screen and (max-width: $bp-smallest) {
-        padding: 10% 5%;
+        padding: 20% 5%;
     }
 
 
@@ -226,7 +234,7 @@
     padding: 10%;
 
     @media only screen and (max-width: $bp-smallest) {
-        padding: 10% 5%;
+        padding: 20% 5%;
     }
 }
 
@@ -310,7 +318,7 @@
     padding: 10%;
 
     @media only screen and (max-width: $bp-smallest) {
-        padding: 10% 5%;
+        padding: 20% 5%;
     }
 
 }
