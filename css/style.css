@@ -80,7 +80,9 @@ a:hover {
   z-index: 2; }
   @media only screen and (max-width: 56.25em) {
     .topnav {
-      display: block; } }
+      display: block;
+      transition: top 0.3s;
+      /* Transition effect when sliding down (and up) */ } }
 
 .topnav #myLinks {
   display: none; }

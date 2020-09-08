@@ -76,6 +76,9 @@ a:hover {
 
     @media only screen and (max-width: $bp-medium) {
         display: block;
+        transition: top 0.3s;
+        /* Transition effect when sliding down (and up) */
+
     }
 }
 
