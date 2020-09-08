@@ -256,16 +256,18 @@
 
         &--list {
             list-style: none;
-            font-size: 2rem;
+            font-size: 3.2rem;
             display: grid;
             grid-template-columns: min-content 1fr;
             grid-column-gap: 3.2rem;
             line-height: 2;
             grid-row-gap: 2rem;
             align-content: start;
+
+
         }
 
-        &--school {
+        &--company {
             color: $color-primary;
             font-size: 2.4rem;
             font-weight: 700;
@@ -288,8 +290,10 @@
         }
 
         &--task {
-            font-size: 1.4rem;
+            font-size: 2rem;
             grid-column: 1/-1;
+
+
         }
 
         &--position {
@@ -319,9 +323,6 @@
     grid-template-rows: min-content min-content;
 
 
-
-
-
     &__image {
         width: 10rem;
     }
@@ -340,6 +341,9 @@
             grid-template-rows: min-content min-content;
             grid-column-gap: 3.2rem;
             line-height: 2;
+
+
+
         }
 
         &--school {
