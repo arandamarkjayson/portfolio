@@ -99,6 +99,10 @@
     color: $color-secondary;
     border: none;
 
+    @media only screen and (max-width: $bp-smallest) {
+        width: 30rem;
+
+    }
 }
 
 .button:hover {

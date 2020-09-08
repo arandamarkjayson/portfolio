@@ -123,8 +123,7 @@ a:hover {
       padding: 20% 5%; } }
 
 .portfolios {
-  display: grid;
-  max-width: 169.6rem; }
+  display: grid; }
   .portfolios__section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
@@ -193,7 +192,7 @@ a:hover {
   grid-column: 2/-1;
   grid-row: 4 / 5;
   background-color: #22222A;
-  padding: 10% 5%; }
+  padding: 10%; }
   @media only screen and (max-width: 37.5em) {
     .techskill-container {
       padding: 20% 5%; } }
@@ -384,6 +383,9 @@ a:hover {
   background-color: #02F093;
   color: #fff;
   border: none; }
+  @media only screen and (max-width: 37.5em) {
+    .button {
+      width: 30rem; } }
 
 .button:hover {
   background-color: #fff;
