@@ -56,7 +56,7 @@
     padding: 10%;
 
     @media only screen and (max-width: $bp-smallest) {
-        padding: 5%;
+        padding: 10% 5%;
     }
 }
 
@@ -131,7 +131,7 @@
     padding: 10%;
 
     @media only screen and (max-width: $bp-smallest) {
-        padding: 5%;
+        padding: 10% 5%;
     }
 }
 
@@ -158,10 +158,10 @@
     grid-column: 2/-1;
     grid-row: 4 / 5;
     background-color: $color-tertiary-dark;
-    padding: 10%;
+    padding: 10% 5%;
 
     @media only screen and (max-width: $bp-smallest) {
-        padding: 5%;
+        padding: 10% 5%;
     }
 
 
@@ -226,7 +226,7 @@
     padding: 10%;
 
     @media only screen and (max-width: $bp-smallest) {
-        padding: 5%;
+        padding: 10% 5%;
     }
 }
 
@@ -310,7 +310,7 @@
     padding: 10%;
 
     @media only screen and (max-width: $bp-smallest) {
-        padding: 5%;
+        padding: 10% 5%;
     }
 
 }
