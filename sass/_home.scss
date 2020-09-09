@@ -68,6 +68,9 @@
     }
 }
 
+
+
+
 .portfolios {
     display: grid;
 
@@ -83,8 +86,13 @@
     &__page {
         display: grid;
         // grid-template-rows: repeat(auto-fit, minmax(37rem, 1fr));
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-gap: 3.2rem;
+
+
+        @media only screen and (max-width: $bp-medium) {
+            grid-template-columns: 1fr;
+        }
     }
 
 }
@@ -93,22 +101,27 @@
 .portfolio {
     position: relative;
 
+
     &__container {
         grid-column: 2/-1;
         grid-row: 2 / 3;
-        background-color: $color-tertiary-dark;
+        background-color: $color-tertiary-dark-1;
         padding: 5% 10%;
 
         @media only screen and (max-width: $bp-smallest) {
             padding: 20% 5%;
         }
 
-        &--page {}
+
     }
 
 }
 
 .image {
+    width: 100%;
+}
+
+img {
     width: 100%;
 }
 

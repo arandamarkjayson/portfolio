@@ -176,21 +176,27 @@ a:hover {
     grid-gap: 3.2rem; }
   .portfolios__page {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 3.2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .portfolios__page {
+        grid-template-columns: 1fr; } }
 
 .portfolio {
   position: relative; }
   .portfolio__container {
     grid-column: 2/-1;
     grid-row: 2 / 3;
-    background-color: #22222A;
+    background-color: #2D2E38;
     padding: 5% 10%; }
     @media only screen and (max-width: 37.5em) {
       .portfolio__container {
         padding: 20% 5%; } }
 
 .image {
+  width: 100%; }
+
+img {
   width: 100%; }
 
 .image,
