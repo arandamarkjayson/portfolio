@@ -133,7 +133,7 @@ a:hover {
   display: grid;
   justify-items: left;
   max-width: 80rem;
-  padding: 20% 10% 20% 0; }
+  padding: 25% 10% 25% 0; }
   @media only screen and (max-width: 90em) {
     .intro {
       grid-column: 1/-1;
@@ -174,9 +174,21 @@ a:hover {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 3.2rem; }
+  .portfolios__page {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 3.2rem; }
 
 .portfolio {
   position: relative; }
+  .portfolio__container {
+    grid-column: 2/-1;
+    grid-row: 2 / 3;
+    background-color: #22222A;
+    padding: 5% 10%; }
+    @media only screen and (max-width: 37.5em) {
+      .portfolio__container {
+        padding: 20% 5%; } }
 
 .image {
   width: 100%; }

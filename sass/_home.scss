@@ -21,7 +21,7 @@
     display: grid;
     justify-items: left;
     max-width: 80rem;
-    padding: 20% 10% 20% 0;
+    padding: 25% 10% 25% 0;
 
     @media only screen and (max-width: $bp-large) {
         grid-column: 1/-1;
@@ -80,11 +80,31 @@
         grid-gap: 3.2rem;
     }
 
+    &__page {
+        display: grid;
+        // grid-template-rows: repeat(auto-fit, minmax(37rem, 1fr));
+        grid-template-columns: 1fr;
+        grid-gap: 3.2rem;
+    }
+
 }
 
 
 .portfolio {
     position: relative;
+
+    &__container {
+        grid-column: 2/-1;
+        grid-row: 2 / 3;
+        background-color: $color-tertiary-dark;
+        padding: 5% 10%;
+
+        @media only screen and (max-width: $bp-smallest) {
+            padding: 20% 5%;
+        }
+
+        &--page {}
+    }
 
 }
 
