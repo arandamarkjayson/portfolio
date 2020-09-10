@@ -21,11 +21,11 @@
       <div class="sidebar">
         <img src="/images/logo.png" alt="" class="logo__header">
         <nav class="nav__main">
-          <a href="index.html" class="link__main selected">Back to Home</a>
-          <a href="portfolio-noon.html" class="link__main">noon</a>
-          <a href="portfolio-sivvi.html" class="link__main">SIVVI</a>
-          <a href="portfolio-gwd.html" class="link__main">GWD</a>
-          <a href="portfolio-personal.html" class="link__main">Personal Project</a>
+          <a href="index.html">Back to Home</a>
+          <a href="portfolio-noon-banners.html" class="selected-sidebar">noon</a>
+          <a href="portfolio-sivvi-banners.html" class="">SIVVI</a>
+          <a href="portfolio-gwd-banners.html" class="">GWD</a>
+          <a href="portfolio-personal-banners.html" class="">Personal Project</a>
         </nav>
         <section class="email__section">
           <h5 class="heading__5--email">EMAIL</h5>
@@ -47,12 +47,11 @@
       <a href="#" class="active"> <img src="/images/logo.png" alt="" class="logo__header"></a>
       <!-- Navigation links (hidden by default) -->
       <div id="myLinks">
-        <a href="#" class="link__main selected" ">Home</a>
-        <a href=" index.html" class="link__main selected">Back to Home</a>
-        <a href="portfolio-noon.html" class="link__main">noon</a>
-        <a href="portfolio-sivvi.html" class="link__main">SIVVI</a>
-        <a href="portfolio-gwd.html" class="link__main">GWD</a>
-        <a href="portfolio-personal.html" class="link__main">Personal Project</a>
+        <a href="index.html" class="selected-sidebar">Back to Home</a>
+        <a href="portfolio-noon-banners.html" class="">noon</a>
+        <a href="portfolio-sivvi-banners.html" class="">SIVVI</a>
+        <a href="portfolio-gwd-banners.html" class="">GWD</a>
+        <a href="portfolio-personal-banners.html" class="">Personal Project</a>
       </div>
       <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -66,7 +65,14 @@
 
     <div class="portfolio__container ">
       <section class="portfolios">
-        <h4 class="heading__4 margin-bottom">01 | <span class="heading__4--green">Slider Banners</span></h4>
+        <h4 class="heading__4 margin-bottom"><span class="heading__4--green">My noon Portfolio</span></h4>
+
+        <nav class="nav__portfolio ">
+          <a href="#" class=""><button class="portfolio__button--selected">Desktop & App
+              Banners</button></a>
+        </nav>
+
+        <p class="portfolio--tools">Tools : Adobe Xd, Adobe Photoshop </p>
         <section class="portfolios__page">
           <img src="./images/noon/banner-1.jpg" alt="">
           <img src="./images/noon/banner-2.jpg" alt="">
@@ -97,42 +103,31 @@
 
 
 
-
-
-
-
-  </div>
-
-
-  <script>
-    function myFunction() {
-      var x = document.getElementById("myLinks");
-      if (x.style.display === "block") {
-        x.style.display = "none";
-      } else {
-        x.style.display = "block";
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
       }
-    }
-  </script>
+    </script>
 
-  <script>
-    var prevScrollpos = window.pageYOffset;
-    window.onscroll = function () {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-      } else {
-        document.getElementById("navbar").style.top = "-7rem";
+    <script>
+      var prevScrollpos = window.pageYOffset;
+      window.onscroll = function () {
+        var currentScrollPos = window.pageYOffset;
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-7rem";
+        }
+        prevScrollpos = currentScrollPos;
       }
-      prevScrollpos = currentScrollPos;
-    }
-  </script>
+    </script>
 
-  <script>
-    $('.topnav>div>a').on('click', function () {
-      $('.navbar-collapse').collapse('hide');
-    });
-  </script>
+
 
 </body>
 

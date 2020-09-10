@@ -1,0 +1,67 @@
+.techskill-container {
+    grid-column: 2/-1;
+    grid-row: 4 / 5;
+    background-color: $color-tertiary-dark;
+    padding: 10%;
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 20% 5%;
+    }
+
+
+}
+
+.techskills {
+    display: grid;
+    grid-template-rows: min-content min-content;
+
+    &__item {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-gap: 3.4rem;
+
+
+        &--list {
+            list-style: none;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__icon {
+        max-width: 3rem;
+        padding-right: 2rem
+    }
+
+    &__grid {
+        display: grid;
+        grid-row-gap: 3.8rem;
+        //grid-column-gap: 4rem;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    }
+}
+
+.rectangle {
+    width: 30rem;
+    height: 1rem;
+    fill: #fff;
+    position: relative;
+
+    @media only screen and (max-width: $bp-smallest) {
+        width: 100%;
+    }
+
+}
+
+
+.rectangle__yellow--1 {
+    height: 1rem;
+    fill: $color-primary;
+    z-index: 1;
+    width: 80%;
+    position: absolute;
+
+    @media only screen and (max-width: $bp-smallest) {
+        width: 80%;
+    }
+}

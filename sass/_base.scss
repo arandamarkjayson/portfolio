@@ -18,7 +18,18 @@ $bp-smallest: 37.5em; // Small devices (landscape phones, 576px and up)
 
 * {
     margin: 0;
+    padding: 0;
 }
+
+a {
+    color: $color-secondary;
+    text-decoration: none;
+}
+
+a:hover {
+    color: $color-primary;
+}
+
 
 html {
     overflow-x: hidden;
@@ -52,6 +63,5 @@ body {
 
     @media only screen and (max-width: $bp-medium) {
         grid-template-columns: 1fr;
-
     }
 }

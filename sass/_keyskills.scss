@@ -1,0 +1,28 @@
+.skill-container {
+    grid-column: 2/-1;
+    grid-row: 3 / 3;
+    background-color: $color-tertiary-dark-1;
+    padding: 10%;
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 20% 5%;
+    }
+}
+
+.keyskills {
+
+    grid-template-rows: min-content min-content;
+    display: grid;
+
+
+    &__item {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+        grid-row-gap: 3.2rem;
+
+        &--list {
+            list-style: none;
+            font-size: 2rem;
+        }
+    }
+}

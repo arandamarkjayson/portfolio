@@ -1,0 +1,54 @@
+.education-container {
+    grid-column: 2/-1;
+    grid-row: 6 / -1;
+    background-color: $color-tertiary-dark;
+    padding: 10%;
+
+    @media only screen and (max-width: $bp-smallest) {
+        padding: 20% 5%;
+    }
+
+}
+
+.educations {
+    display: grid;
+    grid-template-rows: min-content min-content;
+
+
+    &__image {
+        width: 10rem;
+    }
+
+    &__item {
+        display: flex;
+        column-gap: 10rem;
+        flex-wrap: wrap;
+
+        &--list {
+            list-style: none;
+            font-size: 2rem;
+            display: grid;
+            grid-template-columns: min-content 1fr;
+            grid-template-rows: min-content min-content;
+            grid-column-gap: 3.2rem;
+            line-height: 1.6;
+            padding-bottom: 5rem;
+        }
+
+        &--school {
+            color: $color-primary;
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+
+        &--date {
+            font-size: 2rem;
+        }
+
+        &--course {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+
+}
