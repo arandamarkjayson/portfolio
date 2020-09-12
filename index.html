@@ -43,11 +43,9 @@
       </div>
     </div>
 
-
-
     <!-- Top Navigation Menu -->
     <div id="navbar" class="topnav">
-      <a href="#" class="active"> <img src="/images/logo.png" alt="" class="logo__header"></a>
+      <a href="#" class="active-menu"> <img src="/images/logo.png" alt="" class="logo__header"></a>
       <!-- Navigation links (hidden by default) -->
       <div id="myLinks">
         <a href="#" class="selected" ">Home</a>
@@ -94,15 +92,15 @@
         <section class="portfolios__section">
           <a href="portfolio-noon-banners.html" target="_blank">
             <div class="portfolio">
-              <img class="image" src="./images/default-image.jpg" alt="">
+              <img class="image" src="./images/portfolio-noon.jpg" alt="">
               <div class="overlay">
-                <div class="text">noon.com</div>
+                <div class="text">NOON</div>
               </div>
             </div>
           </a>
           <a href="portfolio-sivvi-banners.html" target="_blank">
             <div class="portfolio">
-              <img class="image" src="./images/default-image.jpg" alt="">
+              <img class="image" src="./images/portfolio-sivvi.jpg" alt="">
               <div class="overlay">
                 <div class="text">SIVVI</div>
               </div>
@@ -110,7 +108,7 @@
           </a>
           <a href="portfolio-gwd-banners.html" target="_blank">
             <div class="portfolio">
-              <img class="image" src="./images/default-image.jpg" alt="">
+              <img class="image" src="./images/portfolio-gwd.jpg" alt="">
               <div class="overlay">
                 <div class="text">GWD FZE</div>
               </div>
@@ -118,7 +116,7 @@
           </a>
           <a href="portfolio-personal-banners.html" target="_blank">
             <div class="portfolio">
-              <img class="image" src="./images/default-image.jpg" alt="">
+              <img class="image" src="./images/portfolio-personal.jpg" alt="">
               <div class="overlay">
                 <div class="text">Personal Project</div>
               </div>
@@ -160,7 +158,7 @@
             <li class="techskills__item--list">Experience Design XD</li>
             <svg class="rectangle">
               <rect class="rectangle"></rect>
-              <rect class="rectangle__yellow--1"></rect>
+              <rect class="tskill__rate--1"></rect>
             </svg>
           </section>
 
@@ -168,7 +166,7 @@
             <li class="techskills__item--list">Photoshop</li>
             <svg class="rectangle">
               <rect class="rectangle"></rect>
-              <rect class="rectangle__yellow--1"></rect>
+              <rect class="tskill__rate--2"></rect>
             </svg>
           </section>
 
@@ -176,7 +174,7 @@
             <li class="techskills__item--list">Illustrator</li>
             <svg class="rectangle">
               <rect class="rectangle"></rect>
-              <rect class="rectangle__yellow--1"></rect>
+              <rect class="tskill__rate--3"></rect>
             </svg>
           </section>
 
@@ -184,7 +182,7 @@
             <li class="techskills__item--list">Indesign</li>
             <svg class="rectangle">
               <rect class="rectangle"></rect>
-              <rect class="rectangle__yellow--1"></rect>
+              <rect class="tskill__rate--4"></rect>
             </svg>
           </section>
 
@@ -192,7 +190,7 @@
             <li class="techskills__item--list">Dreamweaver</li>
             <svg class="rectangle">
               <rect class="rectangle"></rect>
-              <rect class="rectangle__yellow--1"></rect>
+              <rect class="tskill__rate--5"></rect>
             </svg>
           </section>
 
@@ -200,7 +198,7 @@
             <li class="techskills__item--list">After Effects</li>
             <svg class="rectangle">
               <rect class="rectangle"></rect>
-              <rect class="rectangle__yellow--1"></rect>
+              <rect class="tskill__rate--6"></rect>
             </svg>
           </section>
 
@@ -208,14 +206,14 @@
             <li class="techskills__item--list">Premiere Pro</li>
             <svg class="rectangle">
               <rect class="rectangle"></rect>
-              <rect class="rectangle__yellow--1"></rect>
+              <rect class="tskill__rate--7"></rect>
             </svg>
           </section>
           <section>
             <li class="techskills__item--list">Lightroom</li>
             <svg class="rectangle">
               <rect class="rectangle"></rect>
-              <rect class="rectangle__yellow--1"></rect>
+              <rect class="tskill__rate--8"></rect>
             </svg>
           </section>
 
@@ -223,7 +221,7 @@
             <li class="techskills__item--list">Sketch</li>
             <svg class="rectangle">
               <rect class="rectangle"></rect>
-              <rect class="rectangle__yellow--1"></rect>
+              <rect class="tskill__rate--9"></rect>
             </svg>
           </section>
 
@@ -231,7 +229,7 @@
             <li class="techskills__item--list">HTML5 / CSS3</li>
             <svg class="rectangle">
               <rect class="rectangle"></rect>
-              <rect class="rectangle__yellow--1"></rect>
+              <rect class="tskill__rate--10"></rect>
             </svg>
           </section>
 
@@ -239,7 +237,7 @@
             <li class="techskills__item--list">Photography</li>
             <svg class="rectangle">
               <rect class="rectangle"></rect>
-              <rect class="rectangle__yellow--1"></rect>
+              <rect class="tskill__rate--11"></rect>
             </svg>
           </section>
         </div>
@@ -390,9 +388,12 @@
       </section>
     </div>
 
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
   </div>
 
-
+  <!--Mobile Navigation Active-->
   <script>
     function myFunction() {
       var x = document.getElementById("myLinks");
@@ -404,24 +405,32 @@
     }
   </script>
 
+  <!--Scroll to Yop-->
   <script>
-    var prevScrollpos = window.pageYOffset;
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () {
-      var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
       } else {
-        document.getElementById("navbar").style.top = "-7rem";
+        mybutton.style.display = "none";
       }
-      prevScrollpos = currentScrollPos;
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
     }
   </script>
 
-  <script>
-    $('.topnav>div>a').on('click', function () {
-      $('.navbar-collapse').collapse('hide');
-    });
-  </script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
 
 </body>
 

@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="/css/fontawesome-free-5.14.0-web/fontawesome-free-5.14.0-web/css/all.css" />
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -44,7 +45,7 @@
 
     <!-- Top Navigation Menu -->
     <div id="navbar" class="topnav">
-      <a href="#" class="active"> <img src="/images/logo.png" alt="" class="logo__header"></a>
+      <a href="#" class="active-menu"> <img src="/images/logo.png" alt="" class="logo__header"></a>
       <!-- Navigation links (hidden by default) -->
       <div id="myLinks">
         <a href="index.html" class="selected-sidebar">Back to Home</a>
@@ -62,71 +63,133 @@
 
 
 
-
     <div class="portfolio__container ">
       <section class="portfolios">
         <h4 class="heading__4 margin-bottom"><span class="heading__4--green">My noon Portfolio</span></h4>
 
-        <nav class="nav__portfolio ">
-          <a href="#" class=""><button class="portfolio__button--selected">Desktop & App
-              Banners</button></a>
+        <nav class="nav__portfolio" id="myDIV">
+          <button class="btn active" onclick="openPage('banner')" id="defaultOpen">Desktop
+            & App
+            Banners</button>
+          <button class="btn" onclick="openPage('landing')">Landing Page</button>
         </nav>
 
-        <p class="portfolio--tools">Tools : Adobe Xd, Adobe Photoshop </p>
-        <section class="portfolios__page">
-          <img src="./images/noon/banner-1.jpg" alt="">
-          <img src="./images/noon/banner-2.jpg" alt="">
-          <img src="./images/noon/banner-3.jpg" alt="">
-          <img src="./images/noon/banner-5.jpg" alt="">
-          <img src="./images/noon/banner-6.jpg" alt="">
-          <img src="./images/noon/banner-7.jpg" alt="">
-          <img src="./images/noon/banner-8.jpg" alt="">
-          <img src="./images/noon/banner-9.jpg" alt="">
-          <img src="./images/noon/banner-10.jpg" alt="">
-          <img src="./images/noon/banner-11.jpg" alt="">
-          <img src="./images/noon/banner-12.jpg" alt="">
-          <img src="./images/noon/banner-13.jpg" alt="">
-          <img src="./images/noon/banner-14.jpg" alt="">
-          <img src="./images/noon/banner-15.jpg" alt="">
-          <img src="./images/noon/banner-16.jpg" alt="">
-          <img src="./images/noon/banner-17.jpg" alt="">
-          <img src="./images/noon/banner-18.jpg" alt="">
-          <img src="./images/noon/banner-19.jpg" alt="">
-          <img src="./images/noon/banner-20.jpg" alt="">
-          <img src="./images/noon/banner-21.jpg" alt="">
-          <img src="./images/noon/banner-22.jpg" alt="">
-          <img src="./images/noon/banner-23.jpg" alt="">
-        </section>
+        <div id="banner" class="tabcontent">
+          <p class="portfolio--tools">Tools : Adobe Xd, Adobe Photoshop </p>
+          <section class="portfolios__page">
+            <img src="./images/noon/banner-1.jpg" alt="">
+            <img src="./images/noon/banner-2.jpg" alt="">
+            <img src="./images/noon/banner-3.jpg" alt="">
+            <img src="./images/noon/banner-5.jpg" alt="">
+            <img src="./images/noon/banner-6.jpg" alt="">
+            <img src="./images/noon/banner-7.jpg" alt="">
+            <img src="./images/noon/banner-8.jpg" alt="">
+            <img src="./images/noon/banner-9.jpg" alt="">
+            <img src="./images/noon/banner-10.jpg" alt="">
+            <img src="./images/noon/banner-11.jpg" alt="">
+            <img src="./images/noon/banner-12.jpg" alt="">
+            <img src="./images/noon/banner-13.jpg" alt="">
+            <img src="./images/noon/banner-14.jpg" alt="">
+            <img src="./images/noon/banner-15.jpg" alt="">
+            <img src="./images/noon/banner-16.jpg" alt="">
+            <img src="./images/noon/banner-17.jpg" alt="">
+            <img src="./images/noon/banner-18.jpg" alt="">
+            <img src="./images/noon/banner-19.jpg" alt="">
+            <img src="./images/noon/banner-20.jpg" alt="">
+            <img src="./images/noon/banner-21.jpg" alt="">
+            <img src="./images/noon/banner-22.jpg" alt="">
+            <img src="./images/noon/banner-23.jpg" alt="">
+          </section>
+        </div>
+
+        <div id="landing" class="tabcontent">
+          <p class="portfolio--tools">Tools : Adobe Xd, Adobe Photoshop </p>
+          <section class="portfolios__page">
+            <img src="./images/noon/banner-1.jpg" alt="">
+            <img src="./images/noon/banner-2.jpg" alt="">
+
+
+          </section>
+        </div>
+
+
       </section>
     </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  </div>
 
 
+  <!--Tab Active-->
+  <script>
+    // Add active class to the current button (highlight it)
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("btn");
+    for (var v = 0; v < btns.length; v++) {
+      btns[v].addEventListener("click", function () {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
 
 
-    <script>
-      function myFunction() {
-        var x = document.getElementById("myLinks");
-        if (x.style.display === "block") {
-          x.style.display = "none";
-        } else {
-          x.style.display = "block";
-        }
+  <!--Tab-->
+  <script>
+    function openPage(pageName, elmnt, color) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
       }
-    </script>
-
-    <script>
-      var prevScrollpos = window.pageYOffset;
-      window.onscroll = function () {
-        var currentScrollPos = window.pageYOffset;
-        if (prevScrollpos > currentScrollPos) {
-          document.getElementById("navbar").style.top = "0";
-        } else {
-          document.getElementById("navbar").style.top = "-7rem";
-        }
-        prevScrollpos = currentScrollPos;
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
       }
-    </script>
+      document.getElementById(pageName).style.display = "block";
+      elmnt.style.backgroundColor = color;
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+  </script>
 
+
+  <!--Mobile Navigation Active-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+
+
+  <!--Scroll to Yop-->
+  <script>
+    //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 
 
 </body>

@@ -74,8 +74,6 @@
 
 .margin-top {
     margin-top: 3.9rem;
-
-
 }
 
 .btn-container {
@@ -112,4 +110,49 @@
 
 .selected-sidebar {
     color: $color-primary;
+}
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: $color-primary;
+    color: $color-tertiary-dark;
+    cursor: pointer;
+    padding: 15px;
+
+}
+
+#myBtn:hover {
+    background-color: $color-tertiary;
+    color: $color-secondary;
+}
+
+
+/* Style the buttons */
+.btn {
+    width: 100%;
+    padding: 1.5rem 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: $font-primary;
+    background-color: $color-tertiary-dark;
+    color: $color-secondary;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Style the active class, and buttons on mouse-over */
+.active,
+.btn:hover {
+    background-color: $color-primary;
+    color: $color-tertiary;
+
 }
