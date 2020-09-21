@@ -388,7 +388,13 @@ body {
   color: #fff;
   font-weight: 700; }
   .heading__4--green {
-    color: #02F093; }
+    color: #02F093;
+    text-transform: uppercase; }
+  .heading__4--overview {
+    font-size: 2.4rem;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 1.6rem; }
 
 .heading__5 {
   font-size: 1.6rem;
@@ -470,6 +476,10 @@ body {
   background-color: #02F093;
   color: #1D1D24; }
 
+.line__bottom {
+  border-color: #22222A;
+  margin: 4rem 0; }
+
 .portfolio-container {
   grid-column: 2/-1;
   grid-row: 2 / 3;
@@ -485,13 +495,33 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-gap: 3.2rem; }
+  .portfolios__overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 3.2rem; }
+    @media only screen and (max-width: 56.25em) {
+      .portfolios__overview {
+        grid-template-columns: 1fr; } }
   .portfolios__page {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 3.2rem; }
+    grid-gap: 3.2rem;
+    background-color: #fff;
+    padding: 3.2rem; }
     @media only screen and (max-width: 56.25em) {
       .portfolios__page {
-        grid-template-columns: 1fr; } }
+        grid-template-columns: 1fr;
+        grid-gap: 1rem; } }
+    .portfolios__page--1 {
+      grid-template-columns: 1fr;
+      background-color: #fff;
+      padding: 3.2rem;
+      grid-gap: 3.2rem; }
+    .portfolios__page--3 {
+      grid-template-columns: 1fr 1fr 1fr;
+      background-color: #fff;
+      padding: 3.2rem;
+      grid-gap: 3.2rem; }
 
 .portfolio {
   position: relative; }
@@ -508,7 +538,20 @@ body {
         padding: 20% 5%; } }
   .portfolio--tools {
     font-size: 1.6rem;
-    margin: 4rem 0; }
+    margin-bottom: 4rem;
+    text-align: right; }
+    @media only screen and (max-width: 56.25em) {
+      .portfolio--tools {
+        text-align: left; } }
+  .portfolio--overview {
+    font-size: 1.6rem;
+    margin-bottom: 4rem; }
+    @media only screen and (max-width: 56.25em) {
+      .portfolio--overview {
+        margin-bottom: 0; } }
+  .portfolio--description {
+    font-size: 1.6rem;
+    line-height: 2; }
 
 img {
   width: 100%; }
@@ -593,3 +636,20 @@ img {
 .portfolio__button:hover {
   background-color: #02F093;
   color: #1D1D24; }
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+  /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */ }
+
+/* Then style the iframe to fit in the container div with full height and width */
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%; }

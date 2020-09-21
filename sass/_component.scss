@@ -17,8 +17,6 @@
         }
     }
 
-
-
 }
 
 .heading__2 {
@@ -39,8 +37,6 @@
 
 }
 
-
-
 .heading__4 {
     font-size: 3rem;
     color: #fff;
@@ -48,6 +44,14 @@
 
     &--green {
         color: $color-primary;
+        text-transform: uppercase;
+    }
+
+    &--overview {
+        font-size: 2.4rem;
+        color: #fff;
+        font-weight: 600;
+        margin-bottom: 1.6rem;
     }
 
 }
@@ -147,6 +151,7 @@
     border: none;
     text-align: center;
     cursor: pointer;
+
 }
 
 /* Style the active class, and buttons on mouse-over */
@@ -155,4 +160,12 @@
     background-color: $color-primary;
     color: $color-tertiary;
 
+}
+
+
+
+
+.line__bottom {
+    border-color: $color-tertiary-dark;
+    margin: 4rem 0;
 }
