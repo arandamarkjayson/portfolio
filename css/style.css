@@ -511,7 +511,8 @@ body {
     @media only screen and (max-width: 56.25em) {
       .portfolios__page {
         grid-template-columns: 1fr;
-        grid-gap: 1rem; } }
+        grid-gap: 1rem;
+        padding: 1rem; } }
     .portfolios__page--1 {
       grid-template-columns: 1fr;
       background-color: #fff;
