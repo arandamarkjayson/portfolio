@@ -516,7 +516,6 @@ body {
     .portfolios__page--1 {
       grid-template-columns: 1fr;
       background-color: #fff;
-      padding: 3.2rem;
       grid-gap: 3.2rem; }
     .portfolios__page--3 {
       grid-template-columns: 1fr 1fr 1fr;
